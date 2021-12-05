@@ -35,10 +35,10 @@
             // advPropertyGrid1
             // 
             this.advPropertyGrid1.GridLinesColor = System.Drawing.Color.WhiteSmoke;
-            this.advPropertyGrid1.Location = new System.Drawing.Point(644, 118);
+            this.advPropertyGrid1.Location = new System.Drawing.Point(481, 347);
             this.advPropertyGrid1.Name = "advPropertyGrid1";
             this.advPropertyGrid1.Size = new System.Drawing.Size(46, 31);
-            this.advPropertyGrid1.TabIndex = 0;
+            this.advPropertyGrid1.TabIndex = 1;
             this.advPropertyGrid1.Text = "advPropertyGrid1";
             // 
             // انبارداری
