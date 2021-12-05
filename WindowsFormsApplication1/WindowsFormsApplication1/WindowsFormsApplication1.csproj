@@ -55,10 +55,67 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Frm-gozaresh-khoroje-kala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm-gozaresh-khoroje-kala.Designer.cs">
+      <DependentUpon>Frm-gozaresh-khoroje-kala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Frm-gozaresh-vorod-kala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm-gozaresh-vorod-kala.Designer.cs">
+      <DependentUpon>Frm-gozaresh-vorod-kala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frm-kalaye-mayob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frm-kalaye-mayob.Designer.cs">
+      <DependentUpon>frm-kalaye-mayob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Frm-khoroj-kala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm-khoroj-kala.Designer.cs">
+      <DependentUpon>Frm-khoroj-kala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Frm-login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm-login.Designer.cs">
+      <DependentUpon>Frm-login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Frm-main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm-main.Designer.cs">
+      <DependentUpon>Frm-main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Frm-personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm-personel.Designer.cs">
+      <DependentUpon>Frm-personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Frm-user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm-user.Designer.cs">
+      <DependentUpon>Frm-user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Frm-vorod-kala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm-vorod-kala.Designer.cs">
+      <DependentUpon>Frm-vorod-kala.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Frm-main.resx">
+      <DependentUpon>Frm-main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -82,9 +139,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="forms\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

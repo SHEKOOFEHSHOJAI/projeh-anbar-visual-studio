@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace WindowsFormsApplication1.forms
 {
-    partial class Form1
+    partial class Frm_login
     {
         /// <summary>
         /// Required designer variable.
@@ -28,30 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
-            this.SuspendLayout();
-            // 
-            // buttonX1
-            // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.Location = new System.Drawing.Point(0, 0);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.TabIndex = 0;
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-
+            this.Text = "Frm_login";
         }
 
         #endregion
-
-        private DevComponents.DotNetBar.ButtonX buttonX1;
     }
 }
-

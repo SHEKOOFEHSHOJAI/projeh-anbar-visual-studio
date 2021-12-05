@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace WindowsFormsApplication1.forms
 {
-    partial class Form1
+    partial class انبارداری
     {
         /// <summary>
         /// Required designer variable.
@@ -28,30 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
             // 
-            // buttonX1
-            // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.Location = new System.Drawing.Point(0, 0);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.TabIndex = 0;
-            // 
-            // Form1
+            // انبارداری
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(1008, 725);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "انبارداری";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "انبارداری";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private DevComponents.DotNetBar.ButtonX buttonX1;
     }
 }
-
