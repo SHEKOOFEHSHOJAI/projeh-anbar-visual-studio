@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1.forms
 {
-    partial class Frm_user
+    partial class frm_about
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,20 @@
         {
             this.SuspendLayout();
             // 
-            // Frm_user
+            // frm_about
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Name = "Frm_user";
+            this.ClientSize = new System.Drawing.Size(592, 262);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frm_about";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm_user";
+            this.Text = "درباره ";
+            this.Load += new System.EventHandler(this.frm_about_Load);
             this.ResumeLayout(false);
 
         }
