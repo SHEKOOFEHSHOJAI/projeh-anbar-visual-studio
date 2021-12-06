@@ -143,6 +143,12 @@
     <Compile Include="forms\Frm-personel.Designer.cs">
       <DependentUpon>Frm-personel.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\frm-taghir-pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frm-taghir-pass.Designer.cs">
+      <DependentUpon>frm-taghir-pass.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Frm-user.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,24 @@
     </Compile>
     <Compile Include="forms\Frm-vorod-kala.Designer.cs">
       <DependentUpon>Frm-vorod-kala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frm_about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frm_about.Designer.cs">
+      <DependentUpon>frm_about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Frm_dastorolamal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm_dastorolamal.Designer.cs">
+      <DependentUpon>Frm_dastorolamal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frm_gozaresh_kalaye_mayob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frm_gozaresh_kalaye_mayob.Designer.cs">
+      <DependentUpon>frm_gozaresh_kalaye_mayob.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -178,8 +202,23 @@
     <EmbeddedResource Include="forms\Frm-personel.resx">
       <DependentUpon>Frm-personel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\frm-taghir-pass.resx">
+      <DependentUpon>frm-taghir-pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Frm-user.resx">
+      <DependentUpon>Frm-user.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\Frm-vorod-kala.resx">
       <DependentUpon>Frm-vorod-kala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frm_about.resx">
+      <DependentUpon>frm_about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Frm_dastorolamal.resx">
+      <DependentUpon>Frm_dastorolamal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frm_gozaresh_kalaye_mayob.resx">
+      <DependentUpon>frm_gozaresh_kalaye_mayob.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

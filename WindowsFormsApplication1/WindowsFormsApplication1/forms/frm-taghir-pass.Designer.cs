@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1.forms
 {
-    partial class Frm_user
+    partial class frm_taghir_pass
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,21 @@
         {
             this.SuspendLayout();
             // 
-            // Frm_user
+            // frm_taghir_pass
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Name = "Frm_user";
+            this.ClientSize = new System.Drawing.Size(442, 265);
+            this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frm_taghir_pass";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm_user";
+            this.Text = "تغییر رمز ";
             this.ResumeLayout(false);
 
         }

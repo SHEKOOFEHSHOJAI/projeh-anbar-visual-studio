@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1.forms
 {
-    partial class Frm_user
+    partial class Frm_dastorolamal
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,19 @@
         {
             this.SuspendLayout();
             // 
-            // Frm_user
+            // Frm_dastorolamal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Name = "Frm_user";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Frm_dastorolamal";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm_user";
+            this.Text = "دستورالعمل برنامه";
             this.ResumeLayout(false);
 
         }
