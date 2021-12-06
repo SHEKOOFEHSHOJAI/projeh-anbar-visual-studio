@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1.forms
 {
-    public partial class انبارداری : Form
+    public partial class main : Form
     {
-        public انبارداری()
+        public main()
         {
             InitializeComponent();
+        }
+
+        private void main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void دستورالعملاستفادهToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
