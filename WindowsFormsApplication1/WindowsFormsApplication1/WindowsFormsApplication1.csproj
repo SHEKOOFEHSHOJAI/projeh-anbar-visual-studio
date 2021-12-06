@@ -33,11 +33,53 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BehComponents, Version=2.2.0.0, Culture=neutral, PublicKeyToken=a36ced8ede3e7af7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BehComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Charts.Design, Version=14.1.0.18, Culture=neutral, PublicKeyToken=90f470f34c89ccaf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.Charts.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Charts, Version=14.1.0.18, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar.Charts.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Design, Version=11.7.0.0, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=14.1.0.18, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar.Keyboard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=11.7.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Layout.Design, Version=11.7.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar.Layout.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=14.1.0.18, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar.Schedule.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=11.7.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
+    </Reference>
     <Reference Include="DevComponents.DotNetBar2">
       <HintPath>..\..\..\progect\DevComponents.DotNetBar.for.Windows.Forms.v14.1.0.18.Cracked.File.Only_pd\Cracked File\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
+    <Reference Include="DevComponents.TreeGX, Version=14.1.0.18, Culture=neutral, PublicKeyToken=055db68f670cfeab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.TreeGX.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +89,10 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="TxtProNetV3, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TxtProNetV3.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
@@ -55,10 +101,85 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Frm-gozaresh-khoroje-kala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm-gozaresh-khoroje-kala.Designer.cs">
+      <DependentUpon>Frm-gozaresh-khoroje-kala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Frm-gozaresh-vorod-kala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm-gozaresh-vorod-kala.Designer.cs">
+      <DependentUpon>Frm-gozaresh-vorod-kala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frm-kalaye-mayob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frm-kalaye-mayob.Designer.cs">
+      <DependentUpon>frm-kalaye-mayob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Frm-khoroj-kala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm-khoroj-kala.Designer.cs">
+      <DependentUpon>Frm-khoroj-kala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Frm-login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm-login.Designer.cs">
+      <DependentUpon>Frm-login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Frm-main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm-main.Designer.cs">
+      <DependentUpon>Frm-main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Frm-personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm-personel.Designer.cs">
+      <DependentUpon>Frm-personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Frm-user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm-user.Designer.cs">
+      <DependentUpon>Frm-user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Frm-vorod-kala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frm-vorod-kala.Designer.cs">
+      <DependentUpon>Frm-vorod-kala.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Frm-gozaresh-khoroje-kala.resx">
+      <DependentUpon>Frm-gozaresh-khoroje-kala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Frm-gozaresh-vorod-kala.resx">
+      <DependentUpon>Frm-gozaresh-vorod-kala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frm-kalaye-mayob.resx">
+      <DependentUpon>frm-kalaye-mayob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Frm-khoroj-kala.resx">
+      <DependentUpon>Frm-khoroj-kala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Frm-main.resx">
+      <DependentUpon>Frm-main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Frm-personel.resx">
+      <DependentUpon>Frm-personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Frm-vorod-kala.resx">
+      <DependentUpon>Frm-vorod-kala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -82,9 +203,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="forms\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -28,7 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.Location = new System.Drawing.Point(0, 0);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -42,6 +50,8 @@
         }
 
         #endregion
+
+        private DevComponents.DotNetBar.ButtonX buttonX1;
     }
 }
 
