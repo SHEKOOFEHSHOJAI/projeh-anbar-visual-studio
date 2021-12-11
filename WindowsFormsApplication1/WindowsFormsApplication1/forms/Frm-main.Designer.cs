@@ -30,18 +30,18 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.عملیاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.عملیاتToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.گزارشاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.راهنماToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.m_tarif_karbar = new System.Windows.Forms.ToolStripMenuItem();
             this.m_tarif_personel = new System.Windows.Forms.ToolStripMenuItem();
             this.m_taghir_ramz_obor = new System.Windows.Forms.ToolStripMenuItem();
+            this.عملیاتToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.m_vorod_kala = new System.Windows.Forms.ToolStripMenuItem();
             this.m_korog_kala = new System.Windows.Forms.ToolStripMenuItem();
             this.m_kala_myob = new System.Windows.Forms.ToolStripMenuItem();
+            this.گزارشاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.m_gozaresh_vorod_kala = new System.Windows.Forms.ToolStripMenuItem();
             this.m_kozaresh_khoroge_kala = new System.Windows.Forms.ToolStripMenuItem();
             this.m_report_kala_mayob = new System.Windows.Forms.ToolStripMenuItem();
+            this.راهنماToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.m_about = new System.Windows.Forms.ToolStripMenuItem();
             this.m_dastorolamal = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuBar1 = new DevComponents.DotNetBar.ContextMenuBar();
@@ -75,38 +75,6 @@
             this.عملیاتToolStripMenuItem.Size = new System.Drawing.Size(107, 26);
             this.عملیاتToolStripMenuItem.Text = "اطلاعات اولیه";
             // 
-            // عملیاتToolStripMenuItem1
-            // 
-            this.عملیاتToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.m_vorod_kala,
-            this.m_korog_kala,
-            this.m_kala_myob});
-            this.عملیاتToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.عملیاتToolStripMenuItem1.Name = "عملیاتToolStripMenuItem1";
-            this.عملیاتToolStripMenuItem1.Size = new System.Drawing.Size(59, 26);
-            this.عملیاتToolStripMenuItem1.Text = "عملیات";
-            // 
-            // گزارشاتToolStripMenuItem
-            // 
-            this.گزارشاتToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.m_gozaresh_vorod_kala,
-            this.m_kozaresh_khoroge_kala,
-            this.m_report_kala_mayob});
-            this.گزارشاتToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.گزارشاتToolStripMenuItem.Name = "گزارشاتToolStripMenuItem";
-            this.گزارشاتToolStripMenuItem.Size = new System.Drawing.Size(73, 26);
-            this.گزارشاتToolStripMenuItem.Text = "گزارشات";
-            // 
-            // راهنماToolStripMenuItem
-            // 
-            this.راهنماToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.m_about,
-            this.m_dastorolamal});
-            this.راهنماToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.راهنماToolStripMenuItem.Name = "راهنماToolStripMenuItem";
-            this.راهنماToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
-            this.راهنماToolStripMenuItem.Text = "راهنما";
-            // 
             // m_tarif_karbar
             // 
             this.m_tarif_karbar.Name = "m_tarif_karbar";
@@ -127,6 +95,17 @@
             this.m_taghir_ramz_obor.Size = new System.Drawing.Size(168, 26);
             this.m_taghir_ramz_obor.Text = "تغییر رمز عبور";
             this.m_taghir_ramz_obor.Click += new System.EventHandler(this.m_taghir_ramz_obor_Click);
+            // 
+            // عملیاتToolStripMenuItem1
+            // 
+            this.عملیاتToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.m_vorod_kala,
+            this.m_korog_kala,
+            this.m_kala_myob});
+            this.عملیاتToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.عملیاتToolStripMenuItem1.Name = "عملیاتToolStripMenuItem1";
+            this.عملیاتToolStripMenuItem1.Size = new System.Drawing.Size(59, 26);
+            this.عملیاتToolStripMenuItem1.Text = "عملیات";
             // 
             // m_vorod_kala
             // 
@@ -149,6 +128,17 @@
             this.m_kala_myob.Text = "کالای معیوب";
             this.m_kala_myob.Click += new System.EventHandler(this.m_kala_myob_Click);
             // 
+            // گزارشاتToolStripMenuItem
+            // 
+            this.گزارشاتToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.m_gozaresh_vorod_kala,
+            this.m_kozaresh_khoroge_kala,
+            this.m_report_kala_mayob});
+            this.گزارشاتToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.گزارشاتToolStripMenuItem.Name = "گزارشاتToolStripMenuItem";
+            this.گزارشاتToolStripMenuItem.Size = new System.Drawing.Size(73, 26);
+            this.گزارشاتToolStripMenuItem.Text = "گزارشات";
+            // 
             // m_gozaresh_vorod_kala
             // 
             this.m_gozaresh_vorod_kala.Name = "m_gozaresh_vorod_kala";
@@ -169,6 +159,16 @@
             this.m_report_kala_mayob.Size = new System.Drawing.Size(201, 26);
             this.m_report_kala_mayob.Text = "گزارش کالاهای معیوب";
             this.m_report_kala_mayob.Click += new System.EventHandler(this.m_report_kala_mayob_Click);
+            // 
+            // راهنماToolStripMenuItem
+            // 
+            this.راهنماToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.m_about,
+            this.m_dastorolamal});
+            this.راهنماToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.راهنماToolStripMenuItem.Name = "راهنماToolStripMenuItem";
+            this.راهنماToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
+            this.راهنماToolStripMenuItem.Text = "راهنما";
             // 
             // m_about
             // 
@@ -206,7 +206,7 @@
             this.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "main";
