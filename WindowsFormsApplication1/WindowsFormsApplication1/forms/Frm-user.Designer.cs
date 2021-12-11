@@ -176,7 +176,7 @@
             this.txt_lvel_karbary.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_lvel_karbary.Name = "txt_lvel_karbary";
             this.txt_lvel_karbary.Size = new System.Drawing.Size(159, 26);
-            this.txt_lvel_karbary.TabIndex = 8;
+            this.txt_lvel_karbary.TabIndex = 3;
             this.txt_lvel_karbary.Text = "";
             // 
             // txt_tekrar_pass
@@ -185,7 +185,7 @@
             this.txt_tekrar_pass.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_tekrar_pass.Name = "txt_tekrar_pass";
             this.txt_tekrar_pass.Size = new System.Drawing.Size(159, 26);
-            this.txt_tekrar_pass.TabIndex = 10;
+            this.txt_tekrar_pass.TabIndex = 4;
             this.txt_tekrar_pass.Text = "";
             // 
             // txt_user_name
@@ -194,7 +194,7 @@
             this.txt_user_name.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_user_name.Name = "txt_user_name";
             this.txt_user_name.Size = new System.Drawing.Size(159, 26);
-            this.txt_user_name.TabIndex = 11;
+            this.txt_user_name.TabIndex = 3;
             this.txt_user_name.Text = "";
             // 
             // groupBox2
@@ -276,7 +276,7 @@
             this.btn_close.ShowSecondBorder = false;
             this.btn_close.Size = new System.Drawing.Size(97, 30);
             this.btn_close.Style = BehComponents.ButtonX.ButtonStyles.Blue;
-            this.btn_close.TabIndex = 2;
+            this.btn_close.TabIndex = 3;
             this.btn_close.Text = "خروج";
             this.btn_close.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_close.UseVisualStyleBackColor = true;
@@ -288,7 +288,7 @@
             this.txt_pass.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.Size = new System.Drawing.Size(159, 26);
-            this.txt_pass.TabIndex = 12;
+            this.txt_pass.TabIndex = 5;
             this.txt_pass.Text = "";
             // 
             // btn_delete
@@ -310,7 +310,7 @@
             this.btn_delete.ShowSecondBorder = false;
             this.btn_delete.Size = new System.Drawing.Size(97, 30);
             this.btn_delete.Style = BehComponents.ButtonX.ButtonStyles.Blue;
-            this.btn_delete.TabIndex = 3;
+            this.btn_delete.TabIndex = 2;
             this.btn_delete.Text = "حذف";
             this.btn_delete.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_delete.UseVisualStyleBackColor = true;

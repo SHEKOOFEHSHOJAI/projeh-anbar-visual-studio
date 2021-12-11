@@ -52,6 +52,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.data_grid_personel = new BehComponents.DataGridViewX(this.components);
+            this.txt_tell_tahvilgirandeh = new System.Windows.Forms.RichTextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -60,6 +62,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_tell_tahvilgirandeh);
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txt_tahvil_dahandeh);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.como_tahvil_girandeh);
@@ -87,7 +91,7 @@
             this.txt_tedad.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_tedad.Name = "txt_tedad";
             this.txt_tedad.Size = new System.Drawing.Size(159, 26);
-            this.txt_tedad.TabIndex = 11;
+            this.txt_tedad.TabIndex = 5;
             this.txt_tedad.Text = "";
             // 
             // txt_model_kala
@@ -96,7 +100,7 @@
             this.txt_model_kala.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_model_kala.Name = "txt_model_kala";
             this.txt_model_kala.Size = new System.Drawing.Size(159, 26);
-            this.txt_model_kala.TabIndex = 10;
+            this.txt_model_kala.TabIndex = 4;
             this.txt_model_kala.Text = "";
             // 
             // txt_name_kala
@@ -105,47 +109,50 @@
             this.txt_name_kala.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_name_kala.Name = "txt_name_kala";
             this.txt_name_kala.Size = new System.Drawing.Size(159, 26);
-            this.txt_name_kala.TabIndex = 8;
+            this.txt_name_kala.TabIndex = 3;
             this.txt_name_kala.Text = "";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label7.Location = new System.Drawing.Point(189, 92);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 18);
+            this.label7.Size = new System.Drawing.Size(86, 23);
             this.label7.TabIndex = 7;
             this.label7.Text = "تحویل گیرنده";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label5.Location = new System.Drawing.Point(193, 39);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.Size = new System.Drawing.Size(50, 23);
             this.label5.TabIndex = 6;
             this.label5.Text = "نام کالا";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.Location = new System.Drawing.Point(689, 36);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.Size = new System.Drawing.Size(38, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "تاریخ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label3.Location = new System.Drawing.Point(672, 89);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.Size = new System.Drawing.Size(58, 23);
             this.label3.TabIndex = 4;
             this.label3.Text = "مدل کالا";
             // 
@@ -161,21 +168,22 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.Location = new System.Drawing.Point(435, 93);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 18);
+            this.label4.Size = new System.Drawing.Size(38, 23);
             this.label4.TabIndex = 5;
             this.label4.Text = "تعداد";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label2.Location = new System.Drawing.Point(425, 39);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.Size = new System.Drawing.Size(61, 23);
             this.label2.TabIndex = 3;
             this.label2.Text = "گروه کالا";
             // 
@@ -194,6 +202,7 @@
             // btn_delete
             // 
             this.btn_delete.BoldedForeColor = System.Drawing.Color.Blue;
+            this.btn_delete.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_delete.HolidayForeColor = System.Drawing.Color.Red;
             this.btn_delete.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btn_delete.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
@@ -210,7 +219,7 @@
             this.btn_delete.ShowSecondBorder = false;
             this.btn_delete.Size = new System.Drawing.Size(97, 30);
             this.btn_delete.Style = BehComponents.ButtonX.ButtonStyles.Blue;
-            this.btn_delete.TabIndex = 3;
+            this.btn_delete.TabIndex = 2;
             this.btn_delete.Text = "حذف";
             this.btn_delete.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_delete.UseVisualStyleBackColor = true;
@@ -218,6 +227,7 @@
             // btn_close
             // 
             this.btn_close.BoldedForeColor = System.Drawing.Color.Blue;
+            this.btn_close.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_close.HolidayForeColor = System.Drawing.Color.Red;
             this.btn_close.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btn_close.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
@@ -234,7 +244,7 @@
             this.btn_close.ShowSecondBorder = false;
             this.btn_close.Size = new System.Drawing.Size(97, 30);
             this.btn_close.Style = BehComponents.ButtonX.ButtonStyles.Blue;
-            this.btn_close.TabIndex = 2;
+            this.btn_close.TabIndex = 3;
             this.btn_close.Text = "خروج";
             this.btn_close.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_close.UseVisualStyleBackColor = true;
@@ -242,6 +252,7 @@
             // btn_edit
             // 
             this.btn_edit.BoldedForeColor = System.Drawing.Color.Blue;
+            this.btn_edit.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_edit.HolidayForeColor = System.Drawing.Color.Red;
             this.btn_edit.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btn_edit.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
@@ -266,6 +277,7 @@
             // btn_add
             // 
             this.btn_add.BoldedForeColor = System.Drawing.Color.Blue;
+            this.btn_add.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_add.HolidayForeColor = System.Drawing.Color.Red;
             this.btn_add.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btn_add.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
@@ -293,7 +305,7 @@
             this.como_goroh_kala.Location = new System.Drawing.Point(269, 33);
             this.como_goroh_kala.Name = "como_goroh_kala";
             this.como_goroh_kala.Size = new System.Drawing.Size(153, 21);
-            this.como_goroh_kala.TabIndex = 13;
+            this.como_goroh_kala.TabIndex = 2;
             // 
             // como_tahvil_girandeh
             // 
@@ -301,7 +313,7 @@
             this.como_tahvil_girandeh.Location = new System.Drawing.Point(24, 90);
             this.como_tahvil_girandeh.Name = "como_tahvil_girandeh";
             this.como_tahvil_girandeh.Size = new System.Drawing.Size(157, 21);
-            this.como_tahvil_girandeh.TabIndex = 14;
+            this.como_tahvil_girandeh.TabIndex = 6;
             // 
             // txt_tahvil_dahandeh
             // 
@@ -309,16 +321,17 @@
             this.txt_tahvil_dahandeh.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_tahvil_dahandeh.Name = "txt_tahvil_dahandeh";
             this.txt_tahvil_dahandeh.Size = new System.Drawing.Size(159, 26);
-            this.txt_tahvil_dahandeh.TabIndex = 16;
+            this.txt_tahvil_dahandeh.TabIndex = 7;
             this.txt_tahvil_dahandeh.Text = "";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label6.Location = new System.Drawing.Point(674, 140);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 13);
+            this.label6.Size = new System.Drawing.Size(83, 23);
             this.label6.TabIndex = 15;
             this.label6.Text = "تحویل دهنده";
             // 
@@ -340,6 +353,26 @@
             this.data_grid_personel.Name = "data_grid_personel";
             this.data_grid_personel.Size = new System.Drawing.Size(717, 250);
             this.data_grid_personel.TabIndex = 0;
+            // 
+            // txt_tell_tahvilgirandeh
+            // 
+            this.txt_tell_tahvilgirandeh.Location = new System.Drawing.Point(269, 136);
+            this.txt_tell_tahvilgirandeh.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txt_tell_tahvilgirandeh.Name = "txt_tell_tahvilgirandeh";
+            this.txt_tell_tahvilgirandeh.Size = new System.Drawing.Size(159, 26);
+            this.txt_tell_tahvilgirandeh.TabIndex = 8;
+            this.txt_tell_tahvilgirandeh.Text = "";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label8.Location = new System.Drawing.Point(440, 140);
+            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(80, 23);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "شماره تماس";
             // 
             // Frm_vorod_kala
             // 
@@ -390,5 +423,7 @@
         private System.Windows.Forms.ComboBox como_goroh_kala;
         private System.Windows.Forms.GroupBox groupBox3;
         private BehComponents.DataGridViewX data_grid_personel;
+        private System.Windows.Forms.RichTextBox txt_tell_tahvilgirandeh;
+        private System.Windows.Forms.Label label8;
     }
 }
