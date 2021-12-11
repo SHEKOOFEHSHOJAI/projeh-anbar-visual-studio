@@ -60,7 +60,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(608, 84);
+            this.label5.Location = new System.Drawing.Point(182, 44);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 18);
@@ -72,7 +72,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(241, 84);
+            this.label4.Location = new System.Drawing.Point(685, 102);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 18);
@@ -83,7 +83,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(608, 129);
+            this.label3.Location = new System.Drawing.Point(440, 105);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 18);
@@ -93,7 +93,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(241, 29);
+            this.label2.Location = new System.Drawing.Point(426, 49);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 18);
@@ -102,7 +102,7 @@
             // 
             // txt_namfamily
             // 
-            this.txt_namfamily.Location = new System.Drawing.Point(56, 26);
+            this.txt_namfamily.Location = new System.Drawing.Point(268, 46);
             this.txt_namfamily.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_namfamily.Name = "txt_namfamily";
             this.txt_namfamily.Size = new System.Drawing.Size(159, 26);
@@ -111,7 +111,7 @@
             // 
             // txt_name
             // 
-            this.txt_name.Location = new System.Drawing.Point(439, 36);
+            this.txt_name.Location = new System.Drawing.Point(516, 49);
             this.txt_name.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(159, 25);
@@ -122,7 +122,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(616, 36);
+            this.label1.Location = new System.Drawing.Point(685, 54);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(21, 18);
@@ -154,7 +154,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(12, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(757, 183);
+            this.groupBox1.Size = new System.Drawing.Size(757, 154);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "اطلاعات را وارد کنید";
@@ -163,7 +163,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(225, 129);
+            this.label7.Location = new System.Drawing.Point(169, 96);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 18);
@@ -172,7 +172,7 @@
             // 
             // txt_lvel_karbary
             // 
-            this.txt_lvel_karbary.Location = new System.Drawing.Point(439, 82);
+            this.txt_lvel_karbary.Location = new System.Drawing.Point(13, 41);
             this.txt_lvel_karbary.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_lvel_karbary.Name = "txt_lvel_karbary";
             this.txt_lvel_karbary.Size = new System.Drawing.Size(159, 26);
@@ -181,7 +181,7 @@
             // 
             // txt_tekrar_pass
             // 
-            this.txt_tekrar_pass.Location = new System.Drawing.Point(439, 126);
+            this.txt_tekrar_pass.Location = new System.Drawing.Point(268, 102);
             this.txt_tekrar_pass.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_tekrar_pass.Name = "txt_tekrar_pass";
             this.txt_tekrar_pass.Size = new System.Drawing.Size(159, 26);
@@ -190,7 +190,7 @@
             // 
             // txt_user_name
             // 
-            this.txt_user_name.Location = new System.Drawing.Point(56, 76);
+            this.txt_user_name.Location = new System.Drawing.Point(516, 99);
             this.txt_user_name.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_user_name.Name = "txt_user_name";
             this.txt_user_name.Size = new System.Drawing.Size(159, 26);
@@ -203,7 +203,7 @@
             this.groupBox2.Controls.Add(this.btn_close);
             this.groupBox2.Controls.Add(this.btn_edit);
             this.groupBox2.Controls.Add(this.btn_add);
-            this.groupBox2.Location = new System.Drawing.Point(12, 185);
+            this.groupBox2.Location = new System.Drawing.Point(12, 166);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(757, 56);
             this.groupBox2.TabIndex = 9;
@@ -284,7 +284,7 @@
             // 
             // txt_pass
             // 
-            this.txt_pass.Location = new System.Drawing.Point(56, 126);
+            this.txt_pass.Location = new System.Drawing.Point(13, 93);
             this.txt_pass.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.Size = new System.Drawing.Size(159, 26);
@@ -318,9 +318,9 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.data_grid_user);
-            this.groupBox3.Location = new System.Drawing.Point(12, 239);
+            this.groupBox3.Location = new System.Drawing.Point(12, 228);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(757, 224);
+            this.groupBox3.Size = new System.Drawing.Size(757, 235);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             // 
@@ -329,9 +329,9 @@
             this.data_grid_user.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_grid_user.Columns_EnglishDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_user.Columns_EnglishDate")));
             this.data_grid_user.Columns_PersianDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_user.Columns_PersianDate")));
-            this.data_grid_user.Location = new System.Drawing.Point(0, 3);
+            this.data_grid_user.Location = new System.Drawing.Point(0, 19);
             this.data_grid_user.Name = "data_grid_user";
-            this.data_grid_user.Size = new System.Drawing.Size(757, 221);
+            this.data_grid_user.Size = new System.Drawing.Size(757, 216);
             this.data_grid_user.TabIndex = 0;
             // 
             // Frm_user
