@@ -76,10 +76,21 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\DevComponents.TreeGX.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -95,6 +106,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="contex2021.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>contex2021.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contex2021.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>contex2021.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contex2021.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>contex2021.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,8 +205,23 @@
     <Compile Include="forms\frm_gozaresh_kalaye_mayob.Designer.cs">
       <DependentUpon>frm_gozaresh_kalaye_mayob.cs</DependentUpon>
     </Compile>
+    <Compile Include="khalaye_mayoub.cs">
+      <DependentUpon>contex2021.tt</DependentUpon>
+    </Compile>
+    <Compile Include="khoroje.cs">
+      <DependentUpon>contex2021.tt</DependentUpon>
+    </Compile>
+    <Compile Include="personel.cs">
+      <DependentUpon>contex2021.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="user.cs">
+      <DependentUpon>contex2021.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vorod.cs">
+      <DependentUpon>contex2021.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Frm-khoroj-kala.resx">
       <DependentUpon>Frm-khoroj-kala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Frm-login.resx">
+      <DependentUpon>Frm-login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Frm-main.resx">
       <DependentUpon>Frm-main.cs</DependentUpon>
@@ -229,6 +273,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EntityDeploy Include="contex2021.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>contex2021.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="contex2021.edmx.diagram">
+      <DependentUpon>contex2021.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -242,7 +294,22 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="contex2021.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>contex2021.Context.cs</LastGenOutput>
+      <DependentUpon>contex2021.edmx</DependentUpon>
+    </Content>
+    <Content Include="contex2021.edmx.sql" />
+    <Content Include="contex2021.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>contex2021.cs</LastGenOutput>
+      <DependentUpon>contex2021.edmx</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

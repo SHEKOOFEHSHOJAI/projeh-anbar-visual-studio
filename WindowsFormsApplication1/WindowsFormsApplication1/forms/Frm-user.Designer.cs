@@ -39,16 +39,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txt_lvel_karbary = new System.Windows.Forms.RichTextBox();
-            this.txt_tekrar_pass = new System.Windows.Forms.RichTextBox();
-            this.txt_user_name = new System.Windows.Forms.RichTextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btn_add = new BehComponents.ButtonX();
-            this.btn_edit = new BehComponents.ButtonX();
-            this.btn_close = new BehComponents.ButtonX();
             this.txt_pass = new System.Windows.Forms.RichTextBox();
+            this.txt_user_name = new System.Windows.Forms.RichTextBox();
+            this.txt_tekrar_pass = new System.Windows.Forms.RichTextBox();
+            this.txt_lvel_karbary = new System.Windows.Forms.RichTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_delete = new BehComponents.ButtonX();
+            this.btn_close = new BehComponents.ButtonX();
+            this.btn_edit = new BehComponents.ButtonX();
+            this.btn_add = new BehComponents.ButtonX();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.data_grid_user = new BehComponents.DataGridViewX(this.components);
             this.groupBox1.SuspendLayout();
@@ -159,25 +159,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "اطلاعات را وارد کنید";
             // 
-            // label7
+            // txt_pass
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(169, 96);
-            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 18);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "تکرار رمز عبور";
+            this.txt_pass.Location = new System.Drawing.Point(13, 93);
+            this.txt_pass.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txt_pass.Name = "txt_pass";
+            this.txt_pass.Size = new System.Drawing.Size(159, 26);
+            this.txt_pass.TabIndex = 5;
+            this.txt_pass.Text = "";
             // 
-            // txt_lvel_karbary
+            // txt_user_name
             // 
-            this.txt_lvel_karbary.Location = new System.Drawing.Point(13, 41);
-            this.txt_lvel_karbary.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txt_lvel_karbary.Name = "txt_lvel_karbary";
-            this.txt_lvel_karbary.Size = new System.Drawing.Size(159, 26);
-            this.txt_lvel_karbary.TabIndex = 3;
-            this.txt_lvel_karbary.Text = "";
+            this.txt_user_name.Location = new System.Drawing.Point(516, 99);
+            this.txt_user_name.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txt_user_name.Name = "txt_user_name";
+            this.txt_user_name.Size = new System.Drawing.Size(159, 26);
+            this.txt_user_name.TabIndex = 3;
+            this.txt_user_name.Text = "";
             // 
             // txt_tekrar_pass
             // 
@@ -188,14 +186,25 @@
             this.txt_tekrar_pass.TabIndex = 4;
             this.txt_tekrar_pass.Text = "";
             // 
-            // txt_user_name
+            // txt_lvel_karbary
             // 
-            this.txt_user_name.Location = new System.Drawing.Point(516, 99);
-            this.txt_user_name.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txt_user_name.Name = "txt_user_name";
-            this.txt_user_name.Size = new System.Drawing.Size(159, 26);
-            this.txt_user_name.TabIndex = 3;
-            this.txt_user_name.Text = "";
+            this.txt_lvel_karbary.Location = new System.Drawing.Point(13, 41);
+            this.txt_lvel_karbary.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txt_lvel_karbary.Name = "txt_lvel_karbary";
+            this.txt_lvel_karbary.Size = new System.Drawing.Size(159, 26);
+            this.txt_lvel_karbary.TabIndex = 3;
+            this.txt_lvel_karbary.Text = "";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(169, 96);
+            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(89, 18);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "تکرار رمز عبور";
             // 
             // groupBox2
             // 
@@ -209,53 +218,29 @@
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             // 
-            // btn_add
+            // btn_delete
             // 
-            this.btn_add.BoldedForeColor = System.Drawing.Color.Blue;
-            this.btn_add.HolidayForeColor = System.Drawing.Color.Red;
-            this.btn_add.ImageFixedSize = new System.Drawing.Size(0, 0);
-            this.btn_add.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
-            this.btn_add.IsBolded = false;
-            this.btn_add.IsHoliday = false;
-            this.btn_add.IsTrailing = false;
-            this.btn_add.Location = new System.Drawing.Point(478, 21);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.PushedAlways = false;
-            this.btn_add.SecondBorderColor = System.Drawing.Color.Red;
-            this.btn_add.SecondBorderDistanceToEdge = 3F;
-            this.btn_add.SecondBorderWidth = 3F;
-            this.btn_add.ShowFirstBorder = true;
-            this.btn_add.ShowSecondBorder = false;
-            this.btn_add.Size = new System.Drawing.Size(88, 30);
-            this.btn_add.Style = BehComponents.ButtonX.ButtonStyles.Blue;
-            this.btn_add.TabIndex = 0;
-            this.btn_add.Text = "ثبت اطلاعات";
-            this.btn_add.TrailingForeColor = System.Drawing.Color.LightGray;
-            this.btn_add.UseVisualStyleBackColor = true;
-            // 
-            // btn_edit
-            // 
-            this.btn_edit.BoldedForeColor = System.Drawing.Color.Blue;
-            this.btn_edit.HolidayForeColor = System.Drawing.Color.Red;
-            this.btn_edit.ImageFixedSize = new System.Drawing.Size(0, 0);
-            this.btn_edit.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
-            this.btn_edit.IsBolded = false;
-            this.btn_edit.IsHoliday = false;
-            this.btn_edit.IsTrailing = false;
-            this.btn_edit.Location = new System.Drawing.Point(337, 21);
-            this.btn_edit.Name = "btn_edit";
-            this.btn_edit.PushedAlways = false;
-            this.btn_edit.SecondBorderColor = System.Drawing.Color.Red;
-            this.btn_edit.SecondBorderDistanceToEdge = 3F;
-            this.btn_edit.SecondBorderWidth = 3F;
-            this.btn_edit.ShowFirstBorder = true;
-            this.btn_edit.ShowSecondBorder = false;
-            this.btn_edit.Size = new System.Drawing.Size(93, 30);
-            this.btn_edit.Style = BehComponents.ButtonX.ButtonStyles.Blue;
-            this.btn_edit.TabIndex = 1;
-            this.btn_edit.Text = "ویرایش";
-            this.btn_edit.TrailingForeColor = System.Drawing.Color.LightGray;
-            this.btn_edit.UseVisualStyleBackColor = true;
+            this.btn_delete.BoldedForeColor = System.Drawing.Color.Blue;
+            this.btn_delete.HolidayForeColor = System.Drawing.Color.Red;
+            this.btn_delete.ImageFixedSize = new System.Drawing.Size(0, 0);
+            this.btn_delete.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
+            this.btn_delete.IsBolded = false;
+            this.btn_delete.IsHoliday = false;
+            this.btn_delete.IsTrailing = false;
+            this.btn_delete.Location = new System.Drawing.Point(212, 21);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.PushedAlways = false;
+            this.btn_delete.SecondBorderColor = System.Drawing.Color.Red;
+            this.btn_delete.SecondBorderDistanceToEdge = 3F;
+            this.btn_delete.SecondBorderWidth = 3F;
+            this.btn_delete.ShowFirstBorder = true;
+            this.btn_delete.ShowSecondBorder = false;
+            this.btn_delete.Size = new System.Drawing.Size(97, 30);
+            this.btn_delete.Style = BehComponents.ButtonX.ButtonStyles.Blue;
+            this.btn_delete.TabIndex = 2;
+            this.btn_delete.Text = "حذف";
+            this.btn_delete.TrailingForeColor = System.Drawing.Color.LightGray;
+            this.btn_delete.UseVisualStyleBackColor = true;
             // 
             // btn_close
             // 
@@ -282,38 +267,54 @@
             this.btn_close.UseVisualStyleBackColor = true;
             this.btn_close.Click += new System.EventHandler(this.buttonX3_Click);
             // 
-            // txt_pass
+            // btn_edit
             // 
-            this.txt_pass.Location = new System.Drawing.Point(13, 93);
-            this.txt_pass.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txt_pass.Name = "txt_pass";
-            this.txt_pass.Size = new System.Drawing.Size(159, 26);
-            this.txt_pass.TabIndex = 5;
-            this.txt_pass.Text = "";
+            this.btn_edit.BoldedForeColor = System.Drawing.Color.Blue;
+            this.btn_edit.HolidayForeColor = System.Drawing.Color.Red;
+            this.btn_edit.ImageFixedSize = new System.Drawing.Size(0, 0);
+            this.btn_edit.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
+            this.btn_edit.IsBolded = false;
+            this.btn_edit.IsHoliday = false;
+            this.btn_edit.IsTrailing = false;
+            this.btn_edit.Location = new System.Drawing.Point(337, 21);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.PushedAlways = false;
+            this.btn_edit.SecondBorderColor = System.Drawing.Color.Red;
+            this.btn_edit.SecondBorderDistanceToEdge = 3F;
+            this.btn_edit.SecondBorderWidth = 3F;
+            this.btn_edit.ShowFirstBorder = true;
+            this.btn_edit.ShowSecondBorder = false;
+            this.btn_edit.Size = new System.Drawing.Size(93, 30);
+            this.btn_edit.Style = BehComponents.ButtonX.ButtonStyles.Blue;
+            this.btn_edit.TabIndex = 1;
+            this.btn_edit.Text = "ویرایش";
+            this.btn_edit.TrailingForeColor = System.Drawing.Color.LightGray;
+            this.btn_edit.UseVisualStyleBackColor = true;
             // 
-            // btn_delete
+            // btn_add
             // 
-            this.btn_delete.BoldedForeColor = System.Drawing.Color.Blue;
-            this.btn_delete.HolidayForeColor = System.Drawing.Color.Red;
-            this.btn_delete.ImageFixedSize = new System.Drawing.Size(0, 0);
-            this.btn_delete.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
-            this.btn_delete.IsBolded = false;
-            this.btn_delete.IsHoliday = false;
-            this.btn_delete.IsTrailing = false;
-            this.btn_delete.Location = new System.Drawing.Point(212, 21);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.PushedAlways = false;
-            this.btn_delete.SecondBorderColor = System.Drawing.Color.Red;
-            this.btn_delete.SecondBorderDistanceToEdge = 3F;
-            this.btn_delete.SecondBorderWidth = 3F;
-            this.btn_delete.ShowFirstBorder = true;
-            this.btn_delete.ShowSecondBorder = false;
-            this.btn_delete.Size = new System.Drawing.Size(97, 30);
-            this.btn_delete.Style = BehComponents.ButtonX.ButtonStyles.Blue;
-            this.btn_delete.TabIndex = 2;
-            this.btn_delete.Text = "حذف";
-            this.btn_delete.TrailingForeColor = System.Drawing.Color.LightGray;
-            this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_add.BoldedForeColor = System.Drawing.Color.Blue;
+            this.btn_add.HolidayForeColor = System.Drawing.Color.Red;
+            this.btn_add.ImageFixedSize = new System.Drawing.Size(0, 0);
+            this.btn_add.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
+            this.btn_add.IsBolded = false;
+            this.btn_add.IsHoliday = false;
+            this.btn_add.IsTrailing = false;
+            this.btn_add.Location = new System.Drawing.Point(478, 21);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.PushedAlways = false;
+            this.btn_add.SecondBorderColor = System.Drawing.Color.Red;
+            this.btn_add.SecondBorderDistanceToEdge = 3F;
+            this.btn_add.SecondBorderWidth = 3F;
+            this.btn_add.ShowFirstBorder = true;
+            this.btn_add.ShowSecondBorder = false;
+            this.btn_add.Size = new System.Drawing.Size(88, 30);
+            this.btn_add.Style = BehComponents.ButtonX.ButtonStyles.Blue;
+            this.btn_add.TabIndex = 0;
+            this.btn_add.Text = "ثبت اطلاعات";
+            this.btn_add.TrailingForeColor = System.Drawing.Color.LightGray;
+            this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // groupBox3
             // 

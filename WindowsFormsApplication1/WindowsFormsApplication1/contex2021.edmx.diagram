@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8e1401abd7514c38be2d84e82baff147" Name="Diagram1" >
+        <EntityTypeShape EntityType="contex2021.vorod" Width="1.5" PointX="7.125" PointY="0.75" />
+        <EntityTypeShape EntityType="contex2021.khoroje" Width="1.5" PointX="5.125" PointY="0.5" />
+        <EntityTypeShape EntityType="contex2021.khalaye_mayoub" Width="1.5" PointX="3.125" PointY="0.5" />
+        <EntityTypeShape EntityType="contex2021.user" Width="1.5" PointX="0.5" PointY="0.75" />
+        <EntityTypeShape EntityType="contex2021.personel" Width="1.5" PointX="5.375" PointY="4.125" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
