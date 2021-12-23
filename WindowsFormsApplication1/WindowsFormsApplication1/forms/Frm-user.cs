@@ -41,7 +41,7 @@ namespace WindowsFormsApplication1.forms
         private void btn_add_Click(object sender, EventArgs e)
 
         {
-            if (txt_tekrar_pass == txt_tekrar_pass)
+            if (txt_pass.Text.Trim() == txt_tekrar_pass.Text.Trim())
             { 
             //make object for class entity
             user us = new user();
@@ -59,8 +59,14 @@ namespace WindowsFormsApplication1.forms
             txt_user_name.Clear();
             txt_tekrar_pass.Clear();
             txt_pass.Clear();
+                F_load();
         }
+            else
+            {
+                MessageBox.Show("رمز عبور و تکرار ان باهم مطابقت ندارد", "توجه");
+            }
          }
+
         private void btn_edit_Click(object sender, EventArgs e)
         {
 
@@ -69,6 +75,16 @@ namespace WindowsFormsApplication1.forms
         private void txt_pass_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        public void F_load()
+        {
+            var w = con.users.Select(p => p);
+            data_grid_user.DataSource = w.ToList();
+        }
+
+        private void Frm_user_Load(object sender, EventArgs e)
+        {
+            F_load();
         }
     }
 }

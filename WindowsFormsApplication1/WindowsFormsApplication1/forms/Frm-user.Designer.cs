@@ -265,6 +265,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.data_grid_user);
+            this.groupBox3.Font = new System.Drawing.Font("Baskerville Old Face", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(12, 228);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(757, 235);
@@ -276,9 +277,10 @@
             this.data_grid_user.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_grid_user.Columns_EnglishDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_user.Columns_EnglishDate")));
             this.data_grid_user.Columns_PersianDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_user.Columns_PersianDate")));
-            this.data_grid_user.Location = new System.Drawing.Point(0, 19);
+            this.data_grid_user.Location = new System.Drawing.Point(34, 19);
             this.data_grid_user.Name = "data_grid_user";
-            this.data_grid_user.Size = new System.Drawing.Size(757, 216);
+            this.data_grid_user.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.data_grid_user.Size = new System.Drawing.Size(669, 210);
             this.data_grid_user.TabIndex = 0;
             // 
             // cmb_sath_karbari
@@ -358,6 +360,7 @@
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "کاربر";
+            this.Load += new System.EventHandler(this.Frm_user_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
