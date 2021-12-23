@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="contex2021.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="contex2021StoreContainer">
+    <EntitySet Name="vorods" EntityType="contex2021.Store.vorods" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="khorojes" EntityType="contex2021.Store.khorojes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="khalaye_mayoub" EntityType="contex2021.Store.khalaye_mayoub" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="users" EntityType="contex2021.Store.users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="personels" EntityType="contex2021.Store.personels" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="vorods">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="date" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="group" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="model" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="count" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="tahvilgirandeh" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="tahvildahandeh" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="khorojes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="date" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="model" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="count" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="tahvildahandeh" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="tahvilgirandeh" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="group" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="khalaye_mayoub">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="group" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="model" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="count" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="discription" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="family" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="level" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="username" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="password" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="personels">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="family" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="codemeli" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="job" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="phonenumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="adress" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="contex2021" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="contex2021Container" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="vorods" EntityType="contex2021.vorod" />
+          <EntitySet Name="khorojes" EntityType="contex2021.khoroje" />
+          <EntitySet Name="khalaye_mayoub" EntityType="contex2021.khalaye_mayoub" />
+          <EntitySet Name="users" EntityType="contex2021.user" />
+          <EntitySet Name="personels" EntityType="contex2021.personel" />
+        </EntityContainer>
+        <EntityType Name="vorod">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="date" Type="String" Nullable="false" />
+          <Property Name="group" Type="String" Nullable="false" />
+          <Property Name="name" Type="String" Nullable="false" />
+          <Property Name="model" Type="String" Nullable="false" />
+          <Property Name="count" Type="String" Nullable="false" />
+          <Property Name="tahvilgirandeh" Type="String" Nullable="false" />
+          <Property Name="tahvildahandeh" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="khoroje">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="date" Type="String" Nullable="false" />
+          <Property Name="name" Type="String" Nullable="false" />
+          <Property Name="model" Type="String" Nullable="false" />
+          <Property Name="count" Type="String" Nullable="false" />
+          <Property Name="tahvildahandeh" Type="String" Nullable="false" />
+          <Property Name="tahvilgirandeh" Type="String" Nullable="false" />
+          <Property Name="group" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="khalaye_mayoub">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="group" Type="String" Nullable="false" />
+          <Property Name="name" Type="String" Nullable="false" />
+          <Property Name="model" Type="String" Nullable="false" />
+          <Property Name="count" Type="String" Nullable="false" />
+          <Property Name="discription" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" Nullable="false" />
+          <Property Name="family" Type="String" Nullable="false" />
+          <Property Name="level" Type="String" Nullable="false" />
+          <Property Name="username" Type="String" Nullable="false" />
+          <Property Name="password" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="personel">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" Nullable="false" />
+          <Property Name="family" Type="String" Nullable="false" />
+          <Property Name="codemeli" Type="String" Nullable="false" />
+          <Property Name="job" Type="String" Nullable="false" />
+          <Property Name="phonenumber" Type="String" Nullable="false" />
+          <Property Name="adress" Type="String" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="contex2021StoreContainer" CdmEntityContainer="contex2021Container">
+    <EntitySetMapping Name="vorods">
+      <EntityTypeMapping TypeName="IsTypeOf(contex2021.vorod)">
+        <MappingFragment StoreEntitySet="vorods">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="group" ColumnName="group" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="tahvilgirandeh" ColumnName="tahvilgirandeh" />
+          <ScalarProperty Name="tahvildahandeh" ColumnName="tahvildahandeh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="khorojes">
+      <EntityTypeMapping TypeName="IsTypeOf(contex2021.khoroje)">
+        <MappingFragment StoreEntitySet="khorojes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="tahvildahandeh" ColumnName="tahvildahandeh" />
+          <ScalarProperty Name="tahvilgirandeh" ColumnName="tahvilgirandeh" />
+          <ScalarProperty Name="group" ColumnName="group" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="khalaye_mayoub">
+      <EntityTypeMapping TypeName="IsTypeOf(contex2021.khalaye_mayoub)">
+        <MappingFragment StoreEntitySet="khalaye_mayoub">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="group" ColumnName="group" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="discription" ColumnName="discription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="IsTypeOf(contex2021.user)">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="family" ColumnName="family" />
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="personels">
+      <EntityTypeMapping TypeName="IsTypeOf(contex2021.personel)">
+        <MappingFragment StoreEntitySet="personels">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="family" ColumnName="family" />
+          <ScalarProperty Name="codemeli" ColumnName="codemeli" />
+          <ScalarProperty Name="job" ColumnName="job" />
+          <ScalarProperty Name="phonenumber" ColumnName="phonenumber" />
+          <ScalarProperty Name="adress" ColumnName="adress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

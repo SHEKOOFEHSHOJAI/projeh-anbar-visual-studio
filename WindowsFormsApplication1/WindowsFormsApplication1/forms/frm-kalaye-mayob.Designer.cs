@@ -31,8 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_kalaye_mayob));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.como_model_kala = new System.Windows.Forms.ComboBox();
+            this.como_name_kala = new System.Windows.Forms.ComboBox();
             this.como_goroh_kala = new System.Windows.Forms.ComboBox();
+            this.txt_tedad = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_delete = new BehComponents.ButtonX();
@@ -41,13 +48,6 @@
             this.btn_add = new BehComponents.ButtonX();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.data_grid_personel = new BehComponents.DataGridViewX(this.components);
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_tedad = new System.Windows.Forms.RichTextBox();
-            this.como_name_kala = new System.Windows.Forms.ComboBox();
-            this.como_model_kala = new System.Windows.Forms.ComboBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -73,6 +73,42 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "اطلاعات را وارد کنید";
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(31, 85);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(383, 26);
+            this.richTextBox1.TabIndex = 9;
+            this.richTextBox1.Text = "";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Location = new System.Drawing.Point(424, 85);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 23);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "توضیحات";
+            // 
+            // como_model_kala
+            // 
+            this.como_model_kala.FormattingEnabled = true;
+            this.como_model_kala.Location = new System.Drawing.Point(31, 41);
+            this.como_model_kala.Name = "como_model_kala";
+            this.como_model_kala.Size = new System.Drawing.Size(153, 21);
+            this.como_model_kala.TabIndex = 8;
+            // 
+            // como_name_kala
+            // 
+            this.como_name_kala.FormattingEnabled = true;
+            this.como_name_kala.Location = new System.Drawing.Point(289, 35);
+            this.como_name_kala.Name = "como_name_kala";
+            this.como_name_kala.Size = new System.Drawing.Size(153, 21);
+            this.como_name_kala.TabIndex = 7;
+            // 
             // como_goroh_kala
             // 
             this.como_goroh_kala.FormattingEnabled = true;
@@ -80,6 +116,15 @@
             this.como_goroh_kala.Name = "como_goroh_kala";
             this.como_goroh_kala.Size = new System.Drawing.Size(153, 21);
             this.como_goroh_kala.TabIndex = 2;
+            // 
+            // txt_tedad
+            // 
+            this.txt_tedad.Location = new System.Drawing.Point(526, 90);
+            this.txt_tedad.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txt_tedad.Name = "txt_tedad";
+            this.txt_tedad.Size = new System.Drawing.Size(159, 26);
+            this.txt_tedad.TabIndex = 5;
+            this.txt_tedad.Text = "";
             // 
             // label5
             // 
@@ -91,6 +136,28 @@
             this.label5.Size = new System.Drawing.Size(50, 23);
             this.label5.TabIndex = 6;
             this.label5.Text = "نام کالا";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label3.Location = new System.Drawing.Point(180, 42);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 23);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "مدل کالا";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label4.Location = new System.Drawing.Point(692, 98);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 23);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "تعداد";
             // 
             // label2
             // 
@@ -234,73 +301,6 @@
             this.data_grid_personel.Size = new System.Drawing.Size(717, 250);
             this.data_grid_personel.TabIndex = 0;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label4.Location = new System.Drawing.Point(692, 98);
-            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 23);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "تعداد";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label3.Location = new System.Drawing.Point(180, 42);
-            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 23);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "مدل کالا";
-            // 
-            // txt_tedad
-            // 
-            this.txt_tedad.Location = new System.Drawing.Point(526, 90);
-            this.txt_tedad.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txt_tedad.Name = "txt_tedad";
-            this.txt_tedad.Size = new System.Drawing.Size(159, 26);
-            this.txt_tedad.TabIndex = 5;
-            this.txt_tedad.Text = "";
-            // 
-            // como_name_kala
-            // 
-            this.como_name_kala.FormattingEnabled = true;
-            this.como_name_kala.Location = new System.Drawing.Point(289, 35);
-            this.como_name_kala.Name = "como_name_kala";
-            this.como_name_kala.Size = new System.Drawing.Size(153, 21);
-            this.como_name_kala.TabIndex = 7;
-            // 
-            // como_model_kala
-            // 
-            this.como_model_kala.FormattingEnabled = true;
-            this.como_model_kala.Location = new System.Drawing.Point(31, 41);
-            this.como_model_kala.Name = "como_model_kala";
-            this.como_model_kala.Size = new System.Drawing.Size(153, 21);
-            this.como_model_kala.TabIndex = 8;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(31, 85);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(383, 26);
-            this.richTextBox1.TabIndex = 9;
-            this.richTextBox1.Text = "";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(424, 85);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 23);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "توضیحات";
-            // 
             // frm_kalaye_mayob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -310,6 +310,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frm_kalaye_mayob";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;

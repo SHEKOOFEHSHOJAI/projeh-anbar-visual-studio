@@ -16,5 +16,9 @@ namespace WindowsFormsApplication1.forms
         {
             InitializeComponent();
         }
+
+        private void txt_model_kala_TextChanged(object sender, EventArgs e)
+        {
+                    }
     }
 }
