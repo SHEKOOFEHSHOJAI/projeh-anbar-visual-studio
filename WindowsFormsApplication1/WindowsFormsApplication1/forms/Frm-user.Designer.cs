@@ -34,15 +34,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_namfamily = new System.Windows.Forms.RichTextBox();
-            this.txt_name = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_pass = new System.Windows.Forms.RichTextBox();
-            this.txt_user_name = new System.Windows.Forms.RichTextBox();
-            this.txt_tekrar_pass = new System.Windows.Forms.RichTextBox();
-            this.txt_lvel_karbary = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_delete = new BehComponents.ButtonX();
@@ -51,6 +45,12 @@
             this.btn_add = new BehComponents.ButtonX();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.data_grid_user = new BehComponents.DataGridViewX(this.components);
+            this.cmb_sath_karbari = new System.Windows.Forms.ComboBox();
+            this.txt_name = new System.Windows.Forms.TextBox();
+            this.txt_user_name = new System.Windows.Forms.TextBox();
+            this.txt_namfamily = new System.Windows.Forms.TextBox();
+            this.txt_pass = new System.Windows.Forms.TextBox();
+            this.txt_tekrar_pass = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -100,25 +100,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "نام خانوادگی";
             // 
-            // txt_namfamily
-            // 
-            this.txt_namfamily.Location = new System.Drawing.Point(268, 46);
-            this.txt_namfamily.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txt_namfamily.Name = "txt_namfamily";
-            this.txt_namfamily.Size = new System.Drawing.Size(159, 26);
-            this.txt_namfamily.TabIndex = 2;
-            this.txt_namfamily.Text = "";
-            // 
-            // txt_name
-            // 
-            this.txt_name.Location = new System.Drawing.Point(516, 49);
-            this.txt_name.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(159, 25);
-            this.txt_name.TabIndex = 1;
-            this.txt_name.Text = "";
-            this.txt_name.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -140,16 +121,16 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txt_pass);
-            this.groupBox1.Controls.Add(this.txt_user_name);
             this.groupBox1.Controls.Add(this.txt_tekrar_pass);
-            this.groupBox1.Controls.Add(this.txt_lvel_karbary);
-            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.txt_pass);
             this.groupBox1.Controls.Add(this.txt_namfamily);
+            this.groupBox1.Controls.Add(this.txt_user_name);
+            this.groupBox1.Controls.Add(this.txt_name);
+            this.groupBox1.Controls.Add(this.cmb_sath_karbari);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txt_name);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(12, 6);
@@ -158,42 +139,6 @@
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "اطلاعات را وارد کنید";
-            // 
-            // txt_pass
-            // 
-            this.txt_pass.Location = new System.Drawing.Point(13, 93);
-            this.txt_pass.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txt_pass.Name = "txt_pass";
-            this.txt_pass.Size = new System.Drawing.Size(159, 26);
-            this.txt_pass.TabIndex = 5;
-            this.txt_pass.Text = "";
-            // 
-            // txt_user_name
-            // 
-            this.txt_user_name.Location = new System.Drawing.Point(516, 99);
-            this.txt_user_name.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txt_user_name.Name = "txt_user_name";
-            this.txt_user_name.Size = new System.Drawing.Size(159, 26);
-            this.txt_user_name.TabIndex = 3;
-            this.txt_user_name.Text = "";
-            // 
-            // txt_tekrar_pass
-            // 
-            this.txt_tekrar_pass.Location = new System.Drawing.Point(268, 102);
-            this.txt_tekrar_pass.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txt_tekrar_pass.Name = "txt_tekrar_pass";
-            this.txt_tekrar_pass.Size = new System.Drawing.Size(159, 26);
-            this.txt_tekrar_pass.TabIndex = 4;
-            this.txt_tekrar_pass.Text = "";
-            // 
-            // txt_lvel_karbary
-            // 
-            this.txt_lvel_karbary.Location = new System.Drawing.Point(13, 41);
-            this.txt_lvel_karbary.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txt_lvel_karbary.Name = "txt_lvel_karbary";
-            this.txt_lvel_karbary.Size = new System.Drawing.Size(159, 26);
-            this.txt_lvel_karbary.TabIndex = 3;
-            this.txt_lvel_karbary.Text = "";
             // 
             // label7
             // 
@@ -290,6 +235,7 @@
             this.btn_edit.Text = "ویرایش";
             this.btn_edit.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_edit.UseVisualStyleBackColor = true;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
             // btn_add
             // 
@@ -335,6 +281,64 @@
             this.data_grid_user.Size = new System.Drawing.Size(757, 216);
             this.data_grid_user.TabIndex = 0;
             // 
+            // cmb_sath_karbari
+            // 
+            this.cmb_sath_karbari.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_sath_karbari.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_sath_karbari.FormattingEnabled = true;
+            this.cmb_sath_karbari.Items.AddRange(new object[] {
+            "مدیر",
+            "انباردار",
+            "حسابدار",
+            "پروسنل"});
+            this.cmb_sath_karbari.Location = new System.Drawing.Point(9, 42);
+            this.cmb_sath_karbari.Name = "cmb_sath_karbari";
+            this.cmb_sath_karbari.Size = new System.Drawing.Size(159, 30);
+            this.cmb_sath_karbari.TabIndex = 8;
+            // 
+            // txt_name
+            // 
+            this.txt_name.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_name.Location = new System.Drawing.Point(507, 49);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(161, 29);
+            this.txt_name.TabIndex = 4;
+            // 
+            // txt_user_name
+            // 
+            this.txt_user_name.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_user_name.Location = new System.Drawing.Point(507, 97);
+            this.txt_user_name.Name = "txt_user_name";
+            this.txt_user_name.Size = new System.Drawing.Size(161, 29);
+            this.txt_user_name.TabIndex = 9;
+            // 
+            // txt_namfamily
+            // 
+            this.txt_namfamily.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_namfamily.Location = new System.Drawing.Point(266, 42);
+            this.txt_namfamily.Name = "txt_namfamily";
+            this.txt_namfamily.Size = new System.Drawing.Size(161, 29);
+            this.txt_namfamily.TabIndex = 10;
+            // 
+            // txt_pass
+            // 
+            this.txt_pass.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pass.Location = new System.Drawing.Point(266, 100);
+            this.txt_pass.Name = "txt_pass";
+            this.txt_pass.PasswordChar = '*';
+            this.txt_pass.Size = new System.Drawing.Size(161, 29);
+            this.txt_pass.TabIndex = 11;
+            this.txt_pass.TextChanged += new System.EventHandler(this.txt_pass_TextChanged);
+            // 
+            // txt_tekrar_pass
+            // 
+            this.txt_tekrar_pass.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tekrar_pass.Location = new System.Drawing.Point(7, 94);
+            this.txt_tekrar_pass.Name = "txt_tekrar_pass";
+            this.txt_tekrar_pass.PasswordChar = '*';
+            this.txt_tekrar_pass.Size = new System.Drawing.Size(161, 29);
+            this.txt_tekrar_pass.TabIndex = 12;
+            // 
             // Frm_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
@@ -365,20 +369,14 @@
         }
 
         #endregion
-        private System.Windows.Forms.RichTextBox txt_name;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox txt_namfamily;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RichTextBox txt_user_name;
-        private System.Windows.Forms.RichTextBox txt_tekrar_pass;
-        private System.Windows.Forms.RichTextBox txt_lvel_karbary;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RichTextBox txt_pass;
         private System.Windows.Forms.GroupBox groupBox2;
         private BehComponents.ButtonX btn_delete;
         private BehComponents.ButtonX btn_close;
@@ -386,5 +384,11 @@
         private BehComponents.ButtonX btn_add;
         private System.Windows.Forms.GroupBox groupBox3;
         private BehComponents.DataGridViewX data_grid_user;
+        private System.Windows.Forms.ComboBox cmb_sath_karbari;
+        private System.Windows.Forms.TextBox txt_name;
+        private System.Windows.Forms.TextBox txt_tekrar_pass;
+        private System.Windows.Forms.TextBox txt_pass;
+        private System.Windows.Forms.TextBox txt_namfamily;
+        private System.Windows.Forms.TextBox txt_user_name;
     }
 }

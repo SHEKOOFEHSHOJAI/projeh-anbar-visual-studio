@@ -16,7 +16,8 @@ namespace WindowsFormsApplication1.forms
         {
             InitializeComponent();
         }
-
+        // conction to table user
+        contex2021Container con = new contex2021Container();
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -34,13 +35,37 @@ namespace WindowsFormsApplication1.forms
 
         private void buttonX3_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-           
-         
+            //make object for class entity
+            user us = new user();
+            us.name = txt_name.Text;
+            us.family = txt_namfamily.Text;
+            us.level = cmb_sath_karbari.SelectedItem.ToString();
+            us.username = txt_user_name.Text;
+            us.password = txt_pass.Text;
+
+            con.users.Add(us);
+            con.SaveChanges();
+            // clear value texbox
+            txt_name.Clear();
+            txt_namfamily.Clear();
+            txt_user_name.Clear();
+            txt_tekrar_pass.Clear();
+            txt_pass.Clear();
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_pass_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
