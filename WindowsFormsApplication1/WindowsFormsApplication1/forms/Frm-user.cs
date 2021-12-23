@@ -39,14 +39,17 @@ namespace WindowsFormsApplication1.forms
         }
 
         private void btn_add_Click(object sender, EventArgs e)
+
         {
+            if (txt_tekrar_pass == txt_tekrar_pass)
+            { 
             //make object for class entity
             user us = new user();
-            us.name = txt_name.Text;
-            us.family = txt_namfamily.Text;
+            us.name = txt_name.Text.Trim();
+            us.family = txt_namfamily.Text.Trim();
             us.level = cmb_sath_karbari.SelectedItem.ToString();
-            us.username = txt_user_name.Text;
-            us.password = txt_pass.Text;
+            us.username = txt_user_name.Text.Trim();
+            us.password = txt_pass.Text.Trim();
 
             con.users.Add(us);
             con.SaveChanges();
@@ -57,7 +60,7 @@ namespace WindowsFormsApplication1.forms
             txt_tekrar_pass.Clear();
             txt_pass.Clear();
         }
-
+         }
         private void btn_edit_Click(object sender, EventArgs e)
         {
 
