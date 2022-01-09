@@ -137,6 +137,7 @@
             this.com_model_kala.Name = "com_model_kala";
             this.com_model_kala.Size = new System.Drawing.Size(144, 21);
             this.com_model_kala.TabIndex = 4;
+            this.com_model_kala.SelectedIndexChanged += new System.EventHandler(this.com_model_kala_SelectedIndexChanged);
             // 
             // como_name_kala
             // 
@@ -339,6 +340,7 @@
             this.btn_close.Text = "خروج";
             this.btn_close.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
             // btn_edit
             // 

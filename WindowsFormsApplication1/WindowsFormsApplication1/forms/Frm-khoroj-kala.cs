@@ -16,6 +16,8 @@ namespace WindowsFormsApplication1.forms
         {
             InitializeComponent();
         }
+        //سزاسری 
+        public int count_110 = 0;
         contex2021Container con = new contex2021Container();
 
         private void data_grid_personel_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -24,15 +26,22 @@ namespace WindowsFormsApplication1.forms
         }
 
         private void btn_add_Click(object sender, EventArgs e)
+            
         {
+            if (Convert.ToInt32(txt_tedad.Text)>count_110 )
+            {
+                MessageBox.Show("تعدادبیشتر از موجودی انبار است", "توجه");
+            }
+            else { 
             khoroje ps = new khoroje();
             ps.date = txt_tarikh.Text.Trim();
-            ps.name = como_name_kala.Text.Trim();
+                ps.group = como_goroh_kala.Text.Trim();
+                ps.name = como_name_kala.Text.Trim();
             ps.model = com_model_kala.Text.Trim();
             ps.count = txt_tedad.Text.Trim();
             ps.tahvildahandeh = como_tahvil_dahandeh.Text.Trim();
             ps.tahvilgirandeh = txt_tahvil_girandeh.Text.Trim();
-            ps.group = como_goroh_kala.Text.Trim();
+           
             ps.tell = txt_tell.Text.Trim();
             ps.adress = txt_adress_tahvil_girandeh.Text.Trim();
            
@@ -40,6 +49,7 @@ namespace WindowsFormsApplication1.forms
             con.khorojes.Add(ps);
             con.SaveChanges();
             f_load();
+            }
             /////
             txt_tarikh.Clear();
             txt_tedad.Clear();
@@ -143,6 +153,24 @@ namespace WindowsFormsApplication1.forms
                 con.SaveChanges();
                 f_load();
             }
+        }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void com_model_kala_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //وصل شو به پایگاه و چک کن اون مدلی ک انتخاب کردین با مدل پایگاه برابر است و اون ردیف رو برگردون
+            var q = con.khorojes.Where(y => y.model == com_model_kala.Text).Select(t => t).ToList();
+            foreach(var x in q)
+            {
+               txt_tedad.Text = x.count.ToString();
+                //string ra nmitavan into varable int rikht
+                count_110 = Convert.ToInt32(x.count);
+            }
+           
         }
     }
 }

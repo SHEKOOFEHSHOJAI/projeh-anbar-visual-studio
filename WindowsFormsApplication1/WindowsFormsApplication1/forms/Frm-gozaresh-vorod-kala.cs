@@ -16,5 +16,30 @@ namespace WindowsFormsApplication1.forms
         {
             InitializeComponent();
         }
-    }
-}
+        contex2021Container con = new contex2021Container();
+
+        private  void txt_search_TextChanged(object sender, EventArgs e)
+        {
+            
+            var q = con.vorods.Select(z => z);
+            
+
+            if (cmb_search.SelectedIndex == 0) //group
+            {
+              
+                q = con.vorods.Where(z =>z.group==txt_search.Text).Select(u=>u);
+               
+            }
+            else if (cmb_search.SelectedIndex == 1)//name
+            {
+                q = con.vorods.Where(z => z.group == txt_search.Text).Select(u => u);
+            }
+            else if (cmb_search.SelectedIndex == 2){//model
+                {
+
+                    q = con.vorods.Where(z => z.group == txt_search.Text);
+
+                 }
+
+            }
+        }} }
