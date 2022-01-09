@@ -53,11 +53,11 @@
             this.btn_edit = new BehComponents.ButtonX();
             this.btn_add = new BehComponents.ButtonX();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.data_grid_personel = new BehComponents.DataGridViewX(this.components);
+            this.data_grid_vorod = new BehComponents.DataGridViewX(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.data_grid_personel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_vorod)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -84,6 +84,7 @@
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "اطلاعات را وارد کنید";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txt_tell_tahvilgirandeh
             // 
@@ -127,6 +128,7 @@
             // 
             // como_tahvil_girandeh
             // 
+            this.como_tahvil_girandeh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.como_tahvil_girandeh.FormattingEnabled = true;
             this.como_tahvil_girandeh.Location = new System.Drawing.Point(24, 90);
             this.como_tahvil_girandeh.Name = "como_tahvil_girandeh";
@@ -135,7 +137,13 @@
             // 
             // como_goroh_kala
             // 
+            this.como_goroh_kala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.como_goroh_kala.FormattingEnabled = true;
+            this.como_goroh_kala.Items.AddRange(new object[] {
+            "لوازم خانگی",
+            "لوازم اداری",
+            "لوازم برقی",
+            "لوازم ماشین"});
             this.como_goroh_kala.Location = new System.Drawing.Point(269, 33);
             this.como_goroh_kala.Name = "como_goroh_kala";
             this.como_goroh_kala.Size = new System.Drawing.Size(153, 21);
@@ -279,6 +287,7 @@
             this.btn_delete.Text = "حذف";
             this.btn_delete.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btn_close
             // 
@@ -304,6 +313,7 @@
             this.btn_close.Text = "خروج";
             this.btn_close.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
             // btn_edit
             // 
@@ -329,6 +339,7 @@
             this.btn_edit.Text = "ویرایش";
             this.btn_edit.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_edit.UseVisualStyleBackColor = true;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
             // btn_add
             // 
@@ -354,25 +365,28 @@
             this.btn_add.Text = "ثبت اطلاعات";
             this.btn_add.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.data_grid_personel);
+            this.groupBox3.Controls.Add(this.data_grid_vorod);
             this.groupBox3.Location = new System.Drawing.Point(-8, 251);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(757, 261);
             this.groupBox3.TabIndex = 14;
             this.groupBox3.TabStop = false;
             // 
-            // data_grid_personel
+            // data_grid_vorod
             // 
-            this.data_grid_personel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_grid_personel.Columns_EnglishDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_personel.Columns_EnglishDate")));
-            this.data_grid_personel.Columns_PersianDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_personel.Columns_PersianDate")));
-            this.data_grid_personel.Location = new System.Drawing.Point(20, 5);
-            this.data_grid_personel.Name = "data_grid_personel";
-            this.data_grid_personel.Size = new System.Drawing.Size(717, 250);
-            this.data_grid_personel.TabIndex = 0;
+            this.data_grid_vorod.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_grid_vorod.Columns_EnglishDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_vorod.Columns_EnglishDate")));
+            this.data_grid_vorod.Columns_PersianDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_vorod.Columns_PersianDate")));
+            this.data_grid_vorod.Location = new System.Drawing.Point(20, 5);
+            this.data_grid_vorod.Name = "data_grid_vorod";
+            this.data_grid_vorod.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.data_grid_vorod.Size = new System.Drawing.Size(717, 250);
+            this.data_grid_vorod.TabIndex = 0;
+            this.data_grid_vorod.Click += new System.EventHandler(this.data_grid_vorod_Click);
             // 
             // Frm_vorod_kala
             // 
@@ -390,11 +404,12 @@
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ورود کالا";
+            this.Load += new System.EventHandler(this.Frm_vorod_kala_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.data_grid_personel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_vorod)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -422,7 +437,7 @@
         private System.Windows.Forms.ComboBox como_tahvil_girandeh;
         private System.Windows.Forms.ComboBox como_goroh_kala;
         private System.Windows.Forms.GroupBox groupBox3;
-        private BehComponents.DataGridViewX data_grid_personel;
+        private BehComponents.DataGridViewX data_grid_vorod;
         private System.Windows.Forms.RichTextBox txt_tell_tahvilgirandeh;
         private System.Windows.Forms.Label label8;
     }

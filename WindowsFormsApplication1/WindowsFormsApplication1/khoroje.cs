@@ -22,5 +22,7 @@ namespace WindowsFormsApplication1
         public string tahvildahandeh { get; set; }
         public string tahvilgirandeh { get; set; }
         public string group { get; set; }
+        public string tell { get; set; }
+        public string adress { get; set; }
     }
 }
