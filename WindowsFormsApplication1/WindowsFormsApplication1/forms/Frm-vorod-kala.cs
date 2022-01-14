@@ -91,12 +91,14 @@ namespace WindowsFormsApplication1.forms
         private void btn_edit_Click(object sender, EventArgs e)
         {
             vorod x = (vorod)data_grid_vorod.SelectedRows[0].DataBoundItem;
-            x.name = txt_name_kala.Text;
             x.date = txt_tarikh.Text;
+            x.name = txt_name_kala.Text;
+          
             x.model =txt_model_kala.Text;
             x.count= txt_tedad.Text;
+            x.tahvilgirandeh = como_tahvil_girandeh.Text;
             x.tahvildahandeh = txt_tahvil_dahandeh.Text;
-            x.tahvilgirandeh = txt_tell_tahvilgirandeh.Text;
+            x.tell = txt_tell_tahvilgirandeh.Text;
             con.SaveChanges();
             f_load();
             txt_name_kala.Clear();
@@ -110,13 +112,16 @@ namespace WindowsFormsApplication1.forms
 
         private void data_grid_vorod_Click(object sender, EventArgs e)
         {
-            txt_name_kala.Text = data_grid_vorod.SelectedRows[0].Cells[1].Value.ToString();
-            txt_tarikh.Text = data_grid_vorod.SelectedRows[0].Cells[2].Value.ToString();
+            txt_tarikh.Text = data_grid_vorod.SelectedRows[0].Cells[1].Value.ToString();
+            como_goroh_kala.Text = data_grid_vorod.SelectedRows[0].Cells[2].Value.ToString();
+            txt_name_kala.Text = data_grid_vorod.SelectedRows[0].Cells[3].Value.ToString();
+            
 
-            txt_model_kala.Text = data_grid_vorod.SelectedRows[0].Cells[3].Value.ToString();
-            txt_tedad.Text = data_grid_vorod.SelectedRows[0].Cells[4].Value.ToString();
-            txt_tahvil_dahandeh.Text = data_grid_vorod.SelectedRows[0].Cells[5].Value.ToString();
-            txt_tell_tahvilgirandeh.Text = data_grid_vorod.SelectedRows[0].Cells[6].Value.ToString();
+            txt_model_kala.Text = data_grid_vorod.SelectedRows[0].Cells[4].Value.ToString();
+            txt_tedad.Text = data_grid_vorod.SelectedRows[0].Cells[5].Value.ToString();
+            como_tahvil_girandeh.Text = data_grid_vorod.SelectedRows[0].Cells[6].Value.ToString();
+            txt_tahvil_dahandeh.Text = data_grid_vorod.SelectedRows[0].Cells[7].Value.ToString();
+            txt_tell_tahvilgirandeh.Text = data_grid_vorod.SelectedRows[0].Cells[8].Value.ToString();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

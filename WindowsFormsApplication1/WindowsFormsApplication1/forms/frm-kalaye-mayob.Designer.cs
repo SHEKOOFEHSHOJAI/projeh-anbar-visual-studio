@@ -281,6 +281,7 @@
             this.btn_add.Text = "ثبت اطلاعات";
             this.btn_add.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // groupBox3
             // 

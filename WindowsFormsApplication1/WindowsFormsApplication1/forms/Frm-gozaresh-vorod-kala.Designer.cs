@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_gozaresh_vorod_kala));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_print = new BehComponents.ButtonX();
-            this.data_grid_personel = new BehComponents.DataGridViewX(this.components);
+            this.data_gozaresh_vorod = new BehComponents.DataGridViewX(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txt_search = new System.Windows.Forms.RichTextBox();
             this.txt_date_ta = new System.Windows.Forms.RichTextBox();
@@ -43,14 +43,14 @@
             this.radb_barhasb = new System.Windows.Forms.RadioButton();
             this.radb_date = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.data_grid_personel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_gozaresh_vorod)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btn_print);
-            this.groupBox1.Controls.Add(this.data_grid_personel);
+            this.groupBox1.Controls.Add(this.data_gozaresh_vorod);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Location = new System.Drawing.Point(1, 3);
             this.groupBox1.Name = "groupBox1";
@@ -83,15 +83,15 @@
             this.btn_print.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_print.UseVisualStyleBackColor = true;
             // 
-            // data_grid_personel
+            // data_gozaresh_vorod
             // 
-            this.data_grid_personel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_grid_personel.Columns_EnglishDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_personel.Columns_EnglishDate")));
-            this.data_grid_personel.Columns_PersianDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_personel.Columns_PersianDate")));
-            this.data_grid_personel.Location = new System.Drawing.Point(12, 183);
-            this.data_grid_personel.Name = "data_grid_personel";
-            this.data_grid_personel.Size = new System.Drawing.Size(717, 250);
-            this.data_grid_personel.TabIndex = 1;
+            this.data_gozaresh_vorod.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_gozaresh_vorod.Columns_EnglishDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_gozaresh_vorod.Columns_EnglishDate")));
+            this.data_gozaresh_vorod.Columns_PersianDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_gozaresh_vorod.Columns_PersianDate")));
+            this.data_gozaresh_vorod.Location = new System.Drawing.Point(12, 183);
+            this.data_gozaresh_vorod.Name = "data_gozaresh_vorod";
+            this.data_gozaresh_vorod.Size = new System.Drawing.Size(717, 250);
+            this.data_gozaresh_vorod.TabIndex = 1;
             // 
             // groupBox2
             // 
@@ -204,9 +204,11 @@
             this.Name = "Frm_gozaresh_vorod_kala";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "گزارش ورود کالا";
+            this.Load += new System.EventHandler(this.Frm_gozaresh_vorod_kala_Load);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.data_grid_personel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_gozaresh_vorod)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -217,7 +219,7 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private BehComponents.DataGridViewX data_grid_personel;
+        private BehComponents.DataGridViewX data_gozaresh_vorod;
         private System.Windows.Forms.ComboBox cmb_search;
         private System.Windows.Forms.RadioButton radb_barhasb;
         private System.Windows.Forms.RadioButton radb_date;
