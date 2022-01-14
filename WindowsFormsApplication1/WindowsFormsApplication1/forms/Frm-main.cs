@@ -17,9 +17,20 @@ namespace WindowsFormsApplication1.forms
             InitializeComponent();
         }
 
-        private void main_Load(object sender, EventArgs e)
+        user ob_u = new user();
+        public main(user st)
         {
+            InitializeComponent();
+            ob_u = st;
+        }
 
+        private void main_Load(object sender, EventArgs e)
+
+        {
+            //دسترسی به نیم و فامیلی جدول یوذر
+            lbl_name_family.Text = ob_u.name + " " + ob_u.family;
+            
+            lbl_l.Text = "           "+ob_u.level+"         ";
         }
 
         private void دستورالعملاستفادهToolStripMenuItem_Click(object sender, EventArgs e)
@@ -98,6 +109,11 @@ namespace WindowsFormsApplication1.forms
         {
             frm_about obj_about = new frm_about();
             obj_about.ShowDialog();
+
+        }
+
+        private void lbl_name_family_Click(object sender, EventArgs e)
+        {
 
         }
     }
