@@ -31,6 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_khoroj_kala));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_adress_tahvil_girandeh = new System.Windows.Forms.RichTextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_tell = new System.Windows.Forms.RichTextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.com_model_kala = new System.Windows.Forms.ComboBox();
+            this.como_name_kala = new System.Windows.Forms.ComboBox();
             this.txt_tahvil_girandeh = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.como_tahvil_dahandeh = new System.Windows.Forms.ComboBox();
@@ -49,26 +55,20 @@
             this.btn_edit = new BehComponents.ButtonX();
             this.btn_add = new BehComponents.ButtonX();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.data_grid_personel = new BehComponents.DataGridViewX(this.components);
-            this.como_name_kala = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.txt_name_tahvil_girandeh = new System.Windows.Forms.RichTextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txt_adress_tahvil_girandeh = new System.Windows.Forms.RichTextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.data_grid_khoroj = new BehComponents.DataGridViewX(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.data_grid_personel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_khoroj)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txt_adress_tahvil_girandeh);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.txt_name_tahvil_girandeh);
+            this.groupBox1.Controls.Add(this.txt_tell);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.com_model_kala);
             this.groupBox1.Controls.Add(this.como_name_kala);
             this.groupBox1.Controls.Add(this.txt_tahvil_girandeh);
             this.groupBox1.Controls.Add(this.label6);
@@ -88,6 +88,66 @@
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "اطلاعات را وارد کنید";
+            // 
+            // txt_adress_tahvil_girandeh
+            // 
+            this.txt_adress_tahvil_girandeh.Location = new System.Drawing.Point(3, 136);
+            this.txt_adress_tahvil_girandeh.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txt_adress_tahvil_girandeh.Name = "txt_adress_tahvil_girandeh";
+            this.txt_adress_tahvil_girandeh.Size = new System.Drawing.Size(141, 26);
+            this.txt_adress_tahvil_girandeh.TabIndex = 9;
+            this.txt_adress_tahvil_girandeh.Text = "";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("B Nazanin", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label9.Location = new System.Drawing.Point(152, 134);
+            this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 20);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "ادرس";
+            // 
+            // txt_tell
+            // 
+            this.txt_tell.Location = new System.Drawing.Point(278, 134);
+            this.txt_tell.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txt_tell.Name = "txt_tell";
+            this.txt_tell.Size = new System.Drawing.Size(143, 26);
+            this.txt_tell.TabIndex = 8;
+            this.txt_tell.Text = "";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label8.Location = new System.Drawing.Point(425, 136);
+            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(80, 23);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "شماره تماس";
+            // 
+            // com_model_kala
+            // 
+            this.com_model_kala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.com_model_kala.FormattingEnabled = true;
+            this.com_model_kala.Location = new System.Drawing.Point(526, 85);
+            this.com_model_kala.Name = "com_model_kala";
+            this.com_model_kala.Size = new System.Drawing.Size(144, 21);
+            this.com_model_kala.TabIndex = 4;
+            this.com_model_kala.SelectedIndexChanged += new System.EventHandler(this.com_model_kala_SelectedIndexChanged);
+            // 
+            // como_name_kala
+            // 
+            this.como_name_kala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.como_name_kala.FormattingEnabled = true;
+            this.como_name_kala.Location = new System.Drawing.Point(6, 36);
+            this.como_name_kala.Name = "como_name_kala";
+            this.como_name_kala.Size = new System.Drawing.Size(144, 21);
+            this.como_name_kala.TabIndex = 3;
+            this.como_name_kala.SelectedIndexChanged += new System.EventHandler(this.como_name_kala_SelectedIndexChanged);
             // 
             // txt_tahvil_girandeh
             // 
@@ -111,6 +171,7 @@
             // 
             // como_tahvil_dahandeh
             // 
+            this.como_tahvil_dahandeh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.como_tahvil_dahandeh.FormattingEnabled = true;
             this.como_tahvil_dahandeh.Location = new System.Drawing.Point(6, 89);
             this.como_tahvil_dahandeh.Name = "como_tahvil_dahandeh";
@@ -119,11 +180,19 @@
             // 
             // como_goroh_kala
             // 
+            this.como_goroh_kala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.como_goroh_kala.FormattingEnabled = true;
+            this.como_goroh_kala.Items.AddRange(new object[] {
+            "لوازم خانگی",
+            "لوازم منزل",
+            "لوازم اداری",
+            " لوازم کشاورزی",
+            ""});
             this.como_goroh_kala.Location = new System.Drawing.Point(278, 33);
             this.como_goroh_kala.Name = "como_goroh_kala";
             this.como_goroh_kala.Size = new System.Drawing.Size(144, 21);
             this.como_goroh_kala.TabIndex = 2;
+            this.como_goroh_kala.SelectedIndexChanged += new System.EventHandler(this.como_goroh_kala_SelectedIndexChanged);
             // 
             // txt_tedad
             // 
@@ -245,6 +314,7 @@
             this.btn_delete.Text = "حذف";
             this.btn_delete.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btn_close
             // 
@@ -270,6 +340,7 @@
             this.btn_close.Text = "خروج";
             this.btn_close.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
             // btn_edit
             // 
@@ -295,6 +366,7 @@
             this.btn_edit.Text = "ویرایش";
             this.btn_edit.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_edit.UseVisualStyleBackColor = true;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
             // btn_add
             // 
@@ -320,82 +392,28 @@
             this.btn_add.Text = "ثبت اطلاعات";
             this.btn_add.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.data_grid_personel);
+            this.groupBox3.Controls.Add(this.data_grid_khoroj);
             this.groupBox3.Location = new System.Drawing.Point(-8, 251);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(757, 261);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             // 
-            // data_grid_personel
+            // data_grid_khoroj
             // 
-            this.data_grid_personel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_grid_personel.Columns_EnglishDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_personel.Columns_EnglishDate")));
-            this.data_grid_personel.Columns_PersianDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_personel.Columns_PersianDate")));
-            this.data_grid_personel.Location = new System.Drawing.Point(11, 5);
-            this.data_grid_personel.Name = "data_grid_personel";
-            this.data_grid_personel.Size = new System.Drawing.Size(717, 250);
-            this.data_grid_personel.TabIndex = 0;
-            this.data_grid_personel.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_grid_personel_CellContentClick);
-            // 
-            // como_name_kala
-            // 
-            this.como_name_kala.FormattingEnabled = true;
-            this.como_name_kala.Location = new System.Drawing.Point(6, 36);
-            this.como_name_kala.Name = "como_name_kala";
-            this.como_name_kala.Size = new System.Drawing.Size(144, 21);
-            this.como_name_kala.TabIndex = 3;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(526, 85);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(144, 21);
-            this.comboBox2.TabIndex = 4;
-            // 
-            // txt_name_tahvil_girandeh
-            // 
-            this.txt_name_tahvil_girandeh.Location = new System.Drawing.Point(278, 134);
-            this.txt_name_tahvil_girandeh.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txt_name_tahvil_girandeh.Name = "txt_name_tahvil_girandeh";
-            this.txt_name_tahvil_girandeh.Size = new System.Drawing.Size(143, 26);
-            this.txt_name_tahvil_girandeh.TabIndex = 8;
-            this.txt_name_tahvil_girandeh.Text = "";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label8.Location = new System.Drawing.Point(425, 136);
-            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 23);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "شماره تماس";
-            // 
-            // txt_adress_tahvil_girandeh
-            // 
-            this.txt_adress_tahvil_girandeh.Location = new System.Drawing.Point(3, 136);
-            this.txt_adress_tahvil_girandeh.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txt_adress_tahvil_girandeh.Name = "txt_adress_tahvil_girandeh";
-            this.txt_adress_tahvil_girandeh.Size = new System.Drawing.Size(141, 26);
-            this.txt_adress_tahvil_girandeh.TabIndex = 9;
-            this.txt_adress_tahvil_girandeh.Text = "";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("B Nazanin", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label9.Location = new System.Drawing.Point(152, 134);
-            this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 20);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "ادرس";
+            this.data_grid_khoroj.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_grid_khoroj.Columns_EnglishDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_khoroj.Columns_EnglishDate")));
+            this.data_grid_khoroj.Columns_PersianDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_khoroj.Columns_PersianDate")));
+            this.data_grid_khoroj.Location = new System.Drawing.Point(11, 5);
+            this.data_grid_khoroj.Name = "data_grid_khoroj";
+            this.data_grid_khoroj.Size = new System.Drawing.Size(717, 250);
+            this.data_grid_khoroj.TabIndex = 0;
+            this.data_grid_khoroj.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_grid_personel_CellContentClick);
+            this.data_grid_khoroj.Click += new System.EventHandler(this.data_grid_khoroj_Click);
             // 
             // Frm_khoroj_kala
             // 
@@ -412,11 +430,12 @@
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "خروج کالا";
+            this.Load += new System.EventHandler(this.Frm_khoroj_kala_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.data_grid_personel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_khoroj)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -442,12 +461,12 @@
         private BehComponents.ButtonX btn_edit;
         private BehComponents.ButtonX btn_add;
         private System.Windows.Forms.GroupBox groupBox3;
-        private BehComponents.DataGridViewX data_grid_personel;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private BehComponents.DataGridViewX data_grid_khoroj;
+        private System.Windows.Forms.ComboBox com_model_kala;
         private System.Windows.Forms.ComboBox como_name_kala;
         private System.Windows.Forms.RichTextBox txt_adress_tahvil_girandeh;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.RichTextBox txt_name_tahvil_girandeh;
+        private System.Windows.Forms.RichTextBox txt_tell;
         private System.Windows.Forms.Label label8;
     }
 }

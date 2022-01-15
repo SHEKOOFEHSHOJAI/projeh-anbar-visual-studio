@@ -71,7 +71,7 @@
             // btn_delete
             // 
             this.btn_delete.BoldedForeColor = System.Drawing.Color.Blue;
-            this.btn_delete.Font = new System.Drawing.Font("B Nazanin", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_delete.Font = new System.Drawing.Font("Baskerville Old Face", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_delete.HolidayForeColor = System.Drawing.Color.Red;
             this.btn_delete.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btn_delete.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
@@ -92,11 +92,12 @@
             this.btn_delete.Text = "حذف";
             this.btn_delete.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btn_close
             // 
             this.btn_close.BoldedForeColor = System.Drawing.Color.Blue;
-            this.btn_close.Font = new System.Drawing.Font("B Nazanin", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_close.Font = new System.Drawing.Font("Baskerville Old Face", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_close.HolidayForeColor = System.Drawing.Color.Red;
             this.btn_close.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btn_close.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
@@ -117,11 +118,12 @@
             this.btn_close.Text = "خروج";
             this.btn_close.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
             // btn_edit
             // 
             this.btn_edit.BoldedForeColor = System.Drawing.Color.Blue;
-            this.btn_edit.Font = new System.Drawing.Font("B Nazanin", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_edit.Font = new System.Drawing.Font("Baskerville Old Face", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_edit.HolidayForeColor = System.Drawing.Color.Red;
             this.btn_edit.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btn_edit.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
@@ -142,11 +144,12 @@
             this.btn_edit.Text = "ویرایش";
             this.btn_edit.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_edit.UseVisualStyleBackColor = true;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
             // btn_add
             // 
             this.btn_add.BoldedForeColor = System.Drawing.Color.Blue;
-            this.btn_add.Font = new System.Drawing.Font("B Nazanin", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_add.Font = new System.Drawing.Font("Baskerville Old Face", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_add.HolidayForeColor = System.Drawing.Color.Red;
             this.btn_add.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btn_add.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
@@ -167,6 +170,7 @@
             this.btn_add.Text = "ثبت اطلاعات";
             this.btn_add.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // groupBox1
             // 
@@ -191,6 +195,7 @@
             // 
             // txt_adress
             // 
+            this.txt_adress.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_adress.Location = new System.Drawing.Point(24, 89);
             this.txt_adress.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_adress.Name = "txt_adress";
@@ -200,6 +205,7 @@
             // 
             // txt_job
             // 
+            this.txt_job.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_job.Location = new System.Drawing.Point(250, 85);
             this.txt_job.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_job.Name = "txt_job";
@@ -209,6 +215,7 @@
             // 
             // txt_tell
             // 
+            this.txt_tell.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tell.Location = new System.Drawing.Point(512, 85);
             this.txt_tell.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_tell.Name = "txt_tell";
@@ -218,6 +225,7 @@
             // 
             // txt_code_meli
             // 
+            this.txt_code_meli.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_code_meli.Location = new System.Drawing.Point(24, 33);
             this.txt_code_meli.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_code_meli.Name = "txt_code_meli";
@@ -228,7 +236,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label7.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label7.Location = new System.Drawing.Point(193, 92);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
@@ -238,6 +246,7 @@
             // 
             // txt_namfamily
             // 
+            this.txt_namfamily.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_namfamily.Location = new System.Drawing.Point(250, 36);
             this.txt_namfamily.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_namfamily.Name = "txt_namfamily";
@@ -248,11 +257,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("B Nazanin", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label5.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label5.Location = new System.Drawing.Point(193, 39);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 20);
+            this.label5.Size = new System.Drawing.Size(50, 23);
             this.label5.TabIndex = 6;
             this.label5.Text = "کد ملی";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -260,27 +269,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("B Nazanin", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.Location = new System.Drawing.Point(689, 36);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 20);
+            this.label1.Size = new System.Drawing.Size(25, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "نام";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("B Nazanin", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label3.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label3.Location = new System.Drawing.Point(672, 89);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 20);
+            this.label3.Size = new System.Drawing.Size(73, 23);
             this.label3.TabIndex = 4;
             this.label3.Text = "شماره تلفن";
             // 
             // txt_name
             // 
+            this.txt_name.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_name.Location = new System.Drawing.Point(512, 36);
             this.txt_name.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_name.Name = "txt_name";
@@ -291,28 +301,29 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("B Nazanin", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label4.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.Location = new System.Drawing.Point(433, 86);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 20);
+            this.label4.Size = new System.Drawing.Size(35, 23);
             this.label4.TabIndex = 5;
             this.label4.Text = "شغل";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("B Nazanin", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label2.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label2.Location = new System.Drawing.Point(417, 39);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 20);
+            this.label2.Size = new System.Drawing.Size(81, 23);
             this.label2.TabIndex = 3;
             this.label2.Text = "نام خانوادگی";
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.data_grid_personel);
+            this.groupBox3.Font = new System.Drawing.Font("Baskerville Old Face", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(-8, 246);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(757, 279);
@@ -324,10 +335,12 @@
             this.data_grid_personel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_grid_personel.Columns_EnglishDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_personel.Columns_EnglishDate")));
             this.data_grid_personel.Columns_PersianDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_personel.Columns_PersianDate")));
-            this.data_grid_personel.Location = new System.Drawing.Point(0, 19);
+            this.data_grid_personel.Location = new System.Drawing.Point(18, 19);
             this.data_grid_personel.Name = "data_grid_personel";
-            this.data_grid_personel.Size = new System.Drawing.Size(757, 260);
+            this.data_grid_personel.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.data_grid_personel.Size = new System.Drawing.Size(719, 260);
             this.data_grid_personel.TabIndex = 0;
+            this.data_grid_personel.Click += new System.EventHandler(this.data_grid_personel_Click);
             // 
             // Frm_personel
             // 
@@ -344,6 +357,7 @@
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "پرسنل";
+            this.Load += new System.EventHandler(this.Frm_personel_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

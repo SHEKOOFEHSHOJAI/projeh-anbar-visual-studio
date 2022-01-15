@@ -29,54 +29,26 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_name_karbari = new System.Windows.Forms.RichTextBox();
-            this.txt_ramz_obor = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn_khoroj = new BehComponents.ButtonX();
             this.btn_vorod = new BehComponents.ButtonX();
+            this.txt_ramz_obor = new System.Windows.Forms.TextBox();
+            this.txt_usename = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_usename);
+            this.groupBox1.Controls.Add(this.txt_ramz_obor);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txt_ramz_obor);
-            this.groupBox1.Controls.Add(this.txt_name_karbari);
             this.groupBox1.Location = new System.Drawing.Point(4, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(487, 180);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            // 
-            // txt_name_karbari
-            // 
-            this.txt_name_karbari.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txt_name_karbari.Location = new System.Drawing.Point(125, 25);
-            this.txt_name_karbari.Name = "txt_name_karbari";
-            this.txt_name_karbari.Size = new System.Drawing.Size(209, 31);
-            this.txt_name_karbari.TabIndex = 0;
-            this.txt_name_karbari.Text = "";
-            // 
-            // txt_ramz_obor
-            // 
-            this.txt_ramz_obor.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txt_ramz_obor.Location = new System.Drawing.Point(125, 80);
-            this.txt_ramz_obor.Name = "txt_ramz_obor";
-            this.txt_ramz_obor.Size = new System.Drawing.Size(209, 31);
-            this.txt_ramz_obor.TabIndex = 1;
-            this.txt_ramz_obor.Text = "";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(359, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "نام کاربری";
             // 
             // label2
             // 
@@ -87,6 +59,16 @@
             this.label2.Size = new System.Drawing.Size(60, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "رمز عبور";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Location = new System.Drawing.Point(359, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 24);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "نام کاربری";
             // 
             // btn_khoroj
             // 
@@ -112,6 +94,7 @@
             this.btn_khoroj.Text = "خروج";
             this.btn_khoroj.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_khoroj.UseVisualStyleBackColor = true;
+            this.btn_khoroj.Click += new System.EventHandler(this.btn_khoroj_Click);
             // 
             // btn_vorod
             // 
@@ -137,6 +120,24 @@
             this.btn_vorod.Text = "ورود";
             this.btn_vorod.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_vorod.UseVisualStyleBackColor = true;
+            this.btn_vorod.Click += new System.EventHandler(this.btn_vorod_Click);
+            // 
+            // txt_ramz_obor
+            // 
+            this.txt_ramz_obor.Location = new System.Drawing.Point(125, 87);
+            this.txt_ramz_obor.Multiline = true;
+            this.txt_ramz_obor.Name = "txt_ramz_obor";
+            this.txt_ramz_obor.PasswordChar = '*';
+            this.txt_ramz_obor.Size = new System.Drawing.Size(209, 36);
+            this.txt_ramz_obor.TabIndex = 2;
+            // 
+            // txt_usename
+            // 
+            this.txt_usename.Location = new System.Drawing.Point(125, 19);
+            this.txt_usename.Multiline = true;
+            this.txt_usename.Name = "txt_usename";
+            this.txt_usename.Size = new System.Drawing.Size(209, 36);
+            this.txt_usename.TabIndex = 1;
             // 
             // Frm_login
             // 
@@ -165,9 +166,9 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox txt_ramz_obor;
-        private System.Windows.Forms.RichTextBox txt_name_karbari;
         private BehComponents.ButtonX btn_khoroj;
         private BehComponents.ButtonX btn_vorod;
+        private System.Windows.Forms.TextBox txt_usename;
+        private System.Windows.Forms.TextBox txt_ramz_obor;
     }
 }

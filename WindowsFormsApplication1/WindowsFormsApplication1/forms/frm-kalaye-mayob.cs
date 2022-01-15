@@ -16,5 +16,10 @@ namespace WindowsFormsApplication1.forms
         {
             InitializeComponent();
         }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

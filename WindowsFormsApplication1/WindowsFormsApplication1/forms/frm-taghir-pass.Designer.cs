@@ -30,15 +30,15 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txt_tekrar_pass_new = new System.Windows.Forms.RichTextBox();
+            this.txt__pass = new System.Windows.Forms.RichTextBox();
             this.txt_user_name = new System.Windows.Forms.RichTextBox();
-            this.txt_tekrar_pass = new System.Windows.Forms.RichTextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txt_pass_new = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txt_tekrar_pass_new = new System.Windows.Forms.RichTextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btn_delete = new BehComponents.ButtonX();
             this.btn_edit = new BehComponents.ButtonX();
@@ -58,7 +58,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txt_tekrar_pass);
+            this.groupBox1.Controls.Add(this.txt__pass);
             this.groupBox1.Controls.Add(this.txt_user_name);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
@@ -68,26 +68,14 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // groupBox2
+            // txt__pass
             // 
-            this.groupBox2.Controls.Add(this.txt_pass_new);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.txt_tekrar_pass_new);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Location = new System.Drawing.Point(12, 125);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(565, 100);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            // 
-            // txt_tekrar_pass_new
-            // 
-            this.txt_tekrar_pass_new.Location = new System.Drawing.Point(32, 33);
-            this.txt_tekrar_pass_new.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txt_tekrar_pass_new.Name = "txt_tekrar_pass_new";
-            this.txt_tekrar_pass_new.Size = new System.Drawing.Size(135, 26);
-            this.txt_tekrar_pass_new.TabIndex = 18;
-            this.txt_tekrar_pass_new.Text = "";
+            this.txt__pass.Location = new System.Drawing.Point(8, 23);
+            this.txt__pass.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txt__pass.Name = "txt__pass";
+            this.txt__pass.Size = new System.Drawing.Size(135, 26);
+            this.txt__pass.TabIndex = 16;
+            this.txt__pass.Text = "";
             // 
             // txt_user_name
             // 
@@ -97,26 +85,6 @@
             this.txt_user_name.Size = new System.Drawing.Size(135, 26);
             this.txt_user_name.TabIndex = 17;
             this.txt_user_name.Text = "";
-            // 
-            // txt_tekrar_pass
-            // 
-            this.txt_tekrar_pass.Location = new System.Drawing.Point(8, 23);
-            this.txt_tekrar_pass.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txt_tekrar_pass.Name = "txt_tekrar_pass";
-            this.txt_tekrar_pass.Size = new System.Drawing.Size(135, 26);
-            this.txt_tekrar_pass.TabIndex = 16;
-            this.txt_tekrar_pass.Text = "";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(188, 36);
-            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(115, 18);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "تکرار رمز عبور جدید";
             // 
             // label3
             // 
@@ -139,6 +107,18 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "نام کاربری";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txt_pass_new);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.txt_tekrar_pass_new);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Location = new System.Drawing.Point(12, 125);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(565, 100);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            // 
             // txt_pass_new
             // 
             this.txt_pass_new.Location = new System.Drawing.Point(306, 34);
@@ -158,6 +138,26 @@
             this.label1.Size = new System.Drawing.Size(83, 18);
             this.label1.TabIndex = 19;
             this.label1.Text = "رمز عبور جدید";
+            // 
+            // txt_tekrar_pass_new
+            // 
+            this.txt_tekrar_pass_new.Location = new System.Drawing.Point(32, 33);
+            this.txt_tekrar_pass_new.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txt_tekrar_pass_new.Name = "txt_tekrar_pass_new";
+            this.txt_tekrar_pass_new.Size = new System.Drawing.Size(135, 26);
+            this.txt_tekrar_pass_new.TabIndex = 18;
+            this.txt_tekrar_pass_new.Text = "";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(188, 36);
+            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(115, 18);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "تکرار رمز عبور جدید";
             // 
             // groupBox3
             // 
@@ -192,6 +192,7 @@
             this.btn_delete.Text = "حذف";
             this.btn_delete.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btn_edit
             // 
@@ -216,6 +217,7 @@
             this.btn_edit.Text = "ویرایش";
             this.btn_edit.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_edit.UseVisualStyleBackColor = true;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
             // frm_taghir_pass
             // 
@@ -251,7 +253,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RichTextBox txt_tekrar_pass;
+        private System.Windows.Forms.RichTextBox txt__pass;
         private System.Windows.Forms.RichTextBox txt_user_name;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

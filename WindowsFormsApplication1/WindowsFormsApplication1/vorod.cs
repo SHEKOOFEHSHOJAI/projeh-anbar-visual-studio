@@ -22,5 +22,6 @@ namespace WindowsFormsApplication1
         public string count { get; set; }
         public string tahvilgirandeh { get; set; }
         public string tahvildahandeh { get; set; }
+        public string tell { get; set; }
     }
 }

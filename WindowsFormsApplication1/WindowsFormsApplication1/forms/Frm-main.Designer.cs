@@ -45,8 +45,14 @@
             this.m_about = new System.Windows.Forms.ToolStripMenuItem();
             this.m_dastorolamal = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuBar1 = new DevComponents.DotNetBar.ContextMenuBar();
+            this.tooltip = new System.Windows.Forms.StatusStrip();
+            this.lbl_name_family = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lbl_apsce = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lbl_l = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contextMenuBar1)).BeginInit();
+            this.tooltip.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -110,21 +116,21 @@
             // m_vorod_kala
             // 
             this.m_vorod_kala.Name = "m_vorod_kala";
-            this.m_vorod_kala.Size = new System.Drawing.Size(152, 26);
+            this.m_vorod_kala.Size = new System.Drawing.Size(147, 26);
             this.m_vorod_kala.Text = "ورود کالا";
             this.m_vorod_kala.Click += new System.EventHandler(this.m_vorod_kala_Click);
             // 
             // m_korog_kala
             // 
             this.m_korog_kala.Name = "m_korog_kala";
-            this.m_korog_kala.Size = new System.Drawing.Size(152, 26);
+            this.m_korog_kala.Size = new System.Drawing.Size(147, 26);
             this.m_korog_kala.Text = "خروج کالا";
             this.m_korog_kala.Click += new System.EventHandler(this.m_korog_kala_Click);
             // 
             // m_kala_myob
             // 
             this.m_kala_myob.Name = "m_kala_myob";
-            this.m_kala_myob.Size = new System.Drawing.Size(152, 26);
+            this.m_kala_myob.Size = new System.Drawing.Size(147, 26);
             this.m_kala_myob.Text = "کالای معیوب";
             this.m_kala_myob.Click += new System.EventHandler(this.m_kala_myob_Click);
             // 
@@ -196,11 +202,50 @@
             this.contextMenuBar1.TabStop = false;
             this.contextMenuBar1.WrapItemsDock = true;
             // 
+            // tooltip
+            // 
+            this.tooltip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lbl_name_family,
+            this.lbl_apsce,
+            this.toolStripStatusLabel2,
+            this.lbl_l});
+            this.tooltip.Location = new System.Drawing.Point(0, 728);
+            this.tooltip.Name = "tooltip";
+            this.tooltip.Size = new System.Drawing.Size(1370, 22);
+            this.tooltip.TabIndex = 1;
+            this.tooltip.Text = "statusStrip1";
+            // 
+            // lbl_name_family
+            // 
+            this.lbl_name_family.Name = "lbl_name_family";
+            this.lbl_name_family.Size = new System.Drawing.Size(36, 17);
+            this.lbl_name_family.Text = "کاربر:";
+            this.lbl_name_family.Click += new System.EventHandler(this.lbl_name_family_Click);
+            // 
+            // lbl_apsce
+            // 
+            this.lbl_apsce.Name = "lbl_apsce";
+            this.lbl_apsce.Size = new System.Drawing.Size(57, 17);
+            this.lbl_apsce.Text = "----------";
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(31, 17);
+            this.toolStripStatusLabel2.Text = "شغل:";
+            // 
+            // lbl_l
+            // 
+            this.lbl_l.Name = "lbl_l";
+            this.lbl_l.Size = new System.Drawing.Size(118, 17);
+            this.lbl_l.Text = "toolStripStatusLabel3";
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 750);
+            this.Controls.Add(this.tooltip);
             this.Controls.Add(this.menuStrip1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("B Nazanin", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -220,6 +265,8 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contextMenuBar1)).EndInit();
+            this.tooltip.ResumeLayout(false);
+            this.tooltip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,5 +291,10 @@
         private System.Windows.Forms.ToolStripMenuItem m_about;
         private System.Windows.Forms.ToolStripMenuItem m_dastorolamal;
         private DevComponents.DotNetBar.ContextMenuBar contextMenuBar1;
+        private System.Windows.Forms.StatusStrip tooltip;
+        private System.Windows.Forms.ToolStripStatusLabel lbl_name_family;
+        private System.Windows.Forms.ToolStripStatusLabel lbl_apsce;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel lbl_l;
     }
 }

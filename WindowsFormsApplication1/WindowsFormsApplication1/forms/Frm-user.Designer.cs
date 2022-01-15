@@ -37,6 +37,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_tekrar_pass = new System.Windows.Forms.TextBox();
+            this.txt_pass = new System.Windows.Forms.TextBox();
+            this.txt_namfamily = new System.Windows.Forms.TextBox();
+            this.txt_user_name = new System.Windows.Forms.TextBox();
+            this.txt_name = new System.Windows.Forms.TextBox();
+            this.cmb_sath_karbari = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_delete = new BehComponents.ButtonX();
@@ -45,12 +51,6 @@
             this.btn_add = new BehComponents.ButtonX();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.data_grid_user = new BehComponents.DataGridViewX(this.components);
-            this.cmb_sath_karbari = new System.Windows.Forms.ComboBox();
-            this.txt_name = new System.Windows.Forms.TextBox();
-            this.txt_user_name = new System.Windows.Forms.TextBox();
-            this.txt_namfamily = new System.Windows.Forms.TextBox();
-            this.txt_pass = new System.Windows.Forms.TextBox();
-            this.txt_tekrar_pass = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -140,6 +140,64 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "اطلاعات را وارد کنید";
             // 
+            // txt_tekrar_pass
+            // 
+            this.txt_tekrar_pass.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tekrar_pass.Location = new System.Drawing.Point(7, 94);
+            this.txt_tekrar_pass.Name = "txt_tekrar_pass";
+            this.txt_tekrar_pass.PasswordChar = '*';
+            this.txt_tekrar_pass.Size = new System.Drawing.Size(161, 29);
+            this.txt_tekrar_pass.TabIndex = 12;
+            // 
+            // txt_pass
+            // 
+            this.txt_pass.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pass.Location = new System.Drawing.Point(266, 100);
+            this.txt_pass.Name = "txt_pass";
+            this.txt_pass.PasswordChar = '*';
+            this.txt_pass.Size = new System.Drawing.Size(161, 29);
+            this.txt_pass.TabIndex = 11;
+            this.txt_pass.TextChanged += new System.EventHandler(this.txt_pass_TextChanged);
+            // 
+            // txt_namfamily
+            // 
+            this.txt_namfamily.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_namfamily.Location = new System.Drawing.Point(266, 42);
+            this.txt_namfamily.Name = "txt_namfamily";
+            this.txt_namfamily.Size = new System.Drawing.Size(161, 29);
+            this.txt_namfamily.TabIndex = 10;
+            // 
+            // txt_user_name
+            // 
+            this.txt_user_name.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_user_name.Location = new System.Drawing.Point(507, 97);
+            this.txt_user_name.Name = "txt_user_name";
+            this.txt_user_name.Size = new System.Drawing.Size(161, 29);
+            this.txt_user_name.TabIndex = 9;
+            // 
+            // txt_name
+            // 
+            this.txt_name.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_name.Location = new System.Drawing.Point(507, 49);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(161, 29);
+            this.txt_name.TabIndex = 4;
+            // 
+            // cmb_sath_karbari
+            // 
+            this.cmb_sath_karbari.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_sath_karbari.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_sath_karbari.FormattingEnabled = true;
+            this.cmb_sath_karbari.Items.AddRange(new object[] {
+            "مدیر",
+            "انباردار",
+            "حسابدار",
+            "پروسنل"});
+            this.cmb_sath_karbari.Location = new System.Drawing.Point(9, 42);
+            this.cmb_sath_karbari.Name = "cmb_sath_karbari";
+            this.cmb_sath_karbari.Size = new System.Drawing.Size(159, 30);
+            this.cmb_sath_karbari.TabIndex = 8;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -186,6 +244,7 @@
             this.btn_delete.Text = "حذف";
             this.btn_delete.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btn_close
             // 
@@ -268,7 +327,7 @@
             this.groupBox3.Font = new System.Drawing.Font("Baskerville Old Face", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(12, 228);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(757, 235);
+            this.groupBox3.Size = new System.Drawing.Size(757, 260);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             // 
@@ -277,75 +336,18 @@
             this.data_grid_user.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_grid_user.Columns_EnglishDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_user.Columns_EnglishDate")));
             this.data_grid_user.Columns_PersianDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_user.Columns_PersianDate")));
-            this.data_grid_user.Location = new System.Drawing.Point(34, 19);
+            this.data_grid_user.Location = new System.Drawing.Point(9, 19);
             this.data_grid_user.Name = "data_grid_user";
             this.data_grid_user.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.data_grid_user.Size = new System.Drawing.Size(669, 210);
+            this.data_grid_user.Size = new System.Drawing.Size(736, 235);
             this.data_grid_user.TabIndex = 0;
-            // 
-            // cmb_sath_karbari
-            // 
-            this.cmb_sath_karbari.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_sath_karbari.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_sath_karbari.FormattingEnabled = true;
-            this.cmb_sath_karbari.Items.AddRange(new object[] {
-            "مدیر",
-            "انباردار",
-            "حسابدار",
-            "پروسنل"});
-            this.cmb_sath_karbari.Location = new System.Drawing.Point(9, 42);
-            this.cmb_sath_karbari.Name = "cmb_sath_karbari";
-            this.cmb_sath_karbari.Size = new System.Drawing.Size(159, 30);
-            this.cmb_sath_karbari.TabIndex = 8;
-            // 
-            // txt_name
-            // 
-            this.txt_name.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_name.Location = new System.Drawing.Point(507, 49);
-            this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(161, 29);
-            this.txt_name.TabIndex = 4;
-            // 
-            // txt_user_name
-            // 
-            this.txt_user_name.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_user_name.Location = new System.Drawing.Point(507, 97);
-            this.txt_user_name.Name = "txt_user_name";
-            this.txt_user_name.Size = new System.Drawing.Size(161, 29);
-            this.txt_user_name.TabIndex = 9;
-            // 
-            // txt_namfamily
-            // 
-            this.txt_namfamily.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_namfamily.Location = new System.Drawing.Point(266, 42);
-            this.txt_namfamily.Name = "txt_namfamily";
-            this.txt_namfamily.Size = new System.Drawing.Size(161, 29);
-            this.txt_namfamily.TabIndex = 10;
-            // 
-            // txt_pass
-            // 
-            this.txt_pass.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pass.Location = new System.Drawing.Point(266, 100);
-            this.txt_pass.Name = "txt_pass";
-            this.txt_pass.PasswordChar = '*';
-            this.txt_pass.Size = new System.Drawing.Size(161, 29);
-            this.txt_pass.TabIndex = 11;
-            this.txt_pass.TextChanged += new System.EventHandler(this.txt_pass_TextChanged);
-            // 
-            // txt_tekrar_pass
-            // 
-            this.txt_tekrar_pass.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tekrar_pass.Location = new System.Drawing.Point(7, 94);
-            this.txt_tekrar_pass.Name = "txt_tekrar_pass";
-            this.txt_tekrar_pass.PasswordChar = '*';
-            this.txt_tekrar_pass.Size = new System.Drawing.Size(161, 29);
-            this.txt_tekrar_pass.TabIndex = 12;
+            this.data_grid_user.Click += new System.EventHandler(this.data_grid_user_Click);
             // 
             // Frm_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(774, 475);
+            this.ClientSize = new System.Drawing.Size(774, 500);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
