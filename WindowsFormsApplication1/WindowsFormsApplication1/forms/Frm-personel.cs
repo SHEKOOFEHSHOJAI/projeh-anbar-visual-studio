@@ -59,8 +59,15 @@ namespace WindowsFormsApplication1.forms
             data_grid_personel.Columns[4].HeaderText = "شماره تلفن";
             data_grid_personel.Columns[5].HeaderText = "شغل";
             data_grid_personel.Columns[6].HeaderText = "ادرس";
-           
-           
+            ////
+            data_grid_personel.Columns[1].Width = 100;
+            data_grid_personel.Columns[2].Width = 150;
+            data_grid_personel.Columns[3].Width = 100;
+            data_grid_personel.Columns[4].Width = 100;
+            data_grid_personel.Columns[5].Width = 100;
+            data_grid_personel.Columns[6].Width = 150;
+
+
         }
 
         private void Frm_personel_Load(object sender, EventArgs e)
@@ -112,6 +119,11 @@ namespace WindowsFormsApplication1.forms
            txt_tell.Text = data_grid_personel.SelectedRows[0].Cells[4].Value.ToString();
             txt_job.Text = data_grid_personel.SelectedRows[0].Cells[5].Value.ToString();
            txt_adress.Text = data_grid_personel.SelectedRows[0].Cells[6].Value.ToString();
+        }
+
+        private void data_grid_personel_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

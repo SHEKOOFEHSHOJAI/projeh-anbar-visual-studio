@@ -329,7 +329,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.data_grid_personel);
-            this.groupBox3.Font = new System.Drawing.Font("Baskerville Old Face", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(-8, 246);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(757, 279);
@@ -346,6 +346,7 @@
             this.data_grid_personel.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.data_grid_personel.Size = new System.Drawing.Size(719, 260);
             this.data_grid_personel.TabIndex = 0;
+            this.data_grid_personel.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_grid_personel_CellContentClick);
             this.data_grid_personel.Click += new System.EventHandler(this.data_grid_personel_Click);
             // 
             // Frm_personel
