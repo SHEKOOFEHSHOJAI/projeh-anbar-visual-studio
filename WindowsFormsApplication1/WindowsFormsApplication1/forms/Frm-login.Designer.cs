@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_login));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_usename = new System.Windows.Forms.TextBox();
             this.txt_ramz_obor = new System.Windows.Forms.TextBox();
@@ -52,6 +53,7 @@
             // 
             // txt_usename
             // 
+            this.txt_usename.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_usename.Location = new System.Drawing.Point(125, 19);
             this.txt_usename.Multiline = true;
             this.txt_usename.Name = "txt_usename";
@@ -60,6 +62,7 @@
             // 
             // txt_ramz_obor
             // 
+            this.txt_ramz_obor.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ramz_obor.Location = new System.Drawing.Point(125, 87);
             this.txt_ramz_obor.Multiline = true;
             this.txt_ramz_obor.Name = "txt_ramz_obor";
@@ -92,12 +95,14 @@
             this.btn_khoroj.BoldedForeColor = System.Drawing.Color.Blue;
             this.btn_khoroj.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_khoroj.HolidayForeColor = System.Drawing.Color.Red;
+            this.btn_khoroj.Image = ((System.Drawing.Image)(resources.GetObject("btn_khoroj.Image")));
+            this.btn_khoroj.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btn_khoroj.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btn_khoroj.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
             this.btn_khoroj.IsBolded = false;
             this.btn_khoroj.IsHoliday = false;
             this.btn_khoroj.IsTrailing = false;
-            this.btn_khoroj.Location = new System.Drawing.Point(280, 218);
+            this.btn_khoroj.Location = new System.Drawing.Point(260, 218);
             this.btn_khoroj.Name = "btn_khoroj";
             this.btn_khoroj.PushedAlways = false;
             this.btn_khoroj.SecondBorderColor = System.Drawing.Color.Red;
@@ -105,7 +110,7 @@
             this.btn_khoroj.SecondBorderWidth = 3F;
             this.btn_khoroj.ShowFirstBorder = true;
             this.btn_khoroj.ShowSecondBorder = false;
-            this.btn_khoroj.Size = new System.Drawing.Size(75, 35);
+            this.btn_khoroj.Size = new System.Drawing.Size(97, 35);
             this.btn_khoroj.Style = BehComponents.ButtonX.ButtonStyles.Blue;
             this.btn_khoroj.TabIndex = 1;
             this.btn_khoroj.Text = "خروج";
@@ -118,12 +123,14 @@
             this.btn_vorod.BoldedForeColor = System.Drawing.Color.Blue;
             this.btn_vorod.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_vorod.HolidayForeColor = System.Drawing.Color.Red;
+            this.btn_vorod.Image = ((System.Drawing.Image)(resources.GetObject("btn_vorod.Image")));
+            this.btn_vorod.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btn_vorod.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btn_vorod.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
             this.btn_vorod.IsBolded = false;
             this.btn_vorod.IsHoliday = false;
             this.btn_vorod.IsTrailing = false;
-            this.btn_vorod.Location = new System.Drawing.Point(157, 218);
+            this.btn_vorod.Location = new System.Drawing.Point(135, 218);
             this.btn_vorod.Name = "btn_vorod";
             this.btn_vorod.PushedAlways = false;
             this.btn_vorod.SecondBorderColor = System.Drawing.Color.Red;
@@ -131,7 +138,7 @@
             this.btn_vorod.SecondBorderWidth = 3F;
             this.btn_vorod.ShowFirstBorder = true;
             this.btn_vorod.ShowSecondBorder = false;
-            this.btn_vorod.Size = new System.Drawing.Size(75, 35);
+            this.btn_vorod.Size = new System.Drawing.Size(97, 35);
             this.btn_vorod.Style = BehComponents.ButtonX.ButtonStyles.Blue;
             this.btn_vorod.TabIndex = 2;
             this.btn_vorod.Text = "ورود";

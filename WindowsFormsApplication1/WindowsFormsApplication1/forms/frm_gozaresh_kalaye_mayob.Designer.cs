@@ -58,12 +58,14 @@
             this.buttonX1.BoldedForeColor = System.Drawing.Color.Blue;
             this.buttonX1.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.buttonX1.HolidayForeColor = System.Drawing.Color.Red;
+            this.buttonX1.Image = ((System.Drawing.Image)(resources.GetObject("buttonX1.Image")));
+            this.buttonX1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.buttonX1.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.buttonX1.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
             this.buttonX1.IsBolded = false;
             this.buttonX1.IsHoliday = false;
             this.buttonX1.IsTrailing = false;
-            this.buttonX1.Location = new System.Drawing.Point(30, 457);
+            this.buttonX1.Location = new System.Drawing.Point(20, 448);
             this.buttonX1.Name = "buttonX1";
             this.buttonX1.PushedAlways = false;
             this.buttonX1.SecondBorderColor = System.Drawing.Color.Red;
@@ -71,10 +73,9 @@
             this.buttonX1.SecondBorderWidth = 3F;
             this.buttonX1.ShowFirstBorder = true;
             this.buttonX1.ShowSecondBorder = false;
-            this.buttonX1.Size = new System.Drawing.Size(80, 32);
+            this.buttonX1.Size = new System.Drawing.Size(51, 52);
             this.buttonX1.Style = BehComponents.ButtonX.ButtonStyles.Blue;
             this.buttonX1.TabIndex = 2;
-            this.buttonX1.Text = "پرینت";
             this.buttonX1.TrailingForeColor = System.Drawing.Color.LightGray;
             this.buttonX1.UseVisualStyleBackColor = true;
             // 
@@ -124,6 +125,7 @@
             // 
             // cmb_search
             // 
+            this.cmb_search.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_search.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.cmb_search.FormattingEnabled = true;
             this.cmb_search.Items.AddRange(new object[] {

@@ -73,12 +73,14 @@
             this.btn_delete.BoldedForeColor = System.Drawing.Color.Blue;
             this.btn_delete.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_delete.HolidayForeColor = System.Drawing.Color.Red;
+            this.btn_delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.Image")));
+            this.btn_delete.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btn_delete.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btn_delete.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
             this.btn_delete.IsBolded = false;
             this.btn_delete.IsHoliday = false;
             this.btn_delete.IsTrailing = false;
-            this.btn_delete.Location = new System.Drawing.Point(212, 21);
+            this.btn_delete.Location = new System.Drawing.Point(236, 18);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.PushedAlways = false;
             this.btn_delete.SecondBorderColor = System.Drawing.Color.Red;
@@ -86,7 +88,7 @@
             this.btn_delete.SecondBorderWidth = 3F;
             this.btn_delete.ShowFirstBorder = true;
             this.btn_delete.ShowSecondBorder = false;
-            this.btn_delete.Size = new System.Drawing.Size(97, 30);
+            this.btn_delete.Size = new System.Drawing.Size(110, 30);
             this.btn_delete.Style = BehComponents.ButtonX.ButtonStyles.Blue;
             this.btn_delete.TabIndex = 2;
             this.btn_delete.Text = "حذف";
@@ -104,7 +106,7 @@
             this.btn_close.IsBolded = false;
             this.btn_close.IsHoliday = false;
             this.btn_close.IsTrailing = false;
-            this.btn_close.Location = new System.Drawing.Point(91, 21);
+            this.btn_close.Location = new System.Drawing.Point(101, 18);
             this.btn_close.Name = "btn_close";
             this.btn_close.PushedAlways = false;
             this.btn_close.SecondBorderColor = System.Drawing.Color.Red;
@@ -112,7 +114,7 @@
             this.btn_close.SecondBorderWidth = 3F;
             this.btn_close.ShowFirstBorder = true;
             this.btn_close.ShowSecondBorder = false;
-            this.btn_close.Size = new System.Drawing.Size(97, 30);
+            this.btn_close.Size = new System.Drawing.Size(110, 30);
             this.btn_close.Style = BehComponents.ButtonX.ButtonStyles.Blue;
             this.btn_close.TabIndex = 3;
             this.btn_close.Text = "خروج";
@@ -125,12 +127,14 @@
             this.btn_edit.BoldedForeColor = System.Drawing.Color.Blue;
             this.btn_edit.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_edit.HolidayForeColor = System.Drawing.Color.Red;
+            this.btn_edit.Image = ((System.Drawing.Image)(resources.GetObject("btn_edit.Image")));
+            this.btn_edit.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btn_edit.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btn_edit.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
             this.btn_edit.IsBolded = false;
             this.btn_edit.IsHoliday = false;
             this.btn_edit.IsTrailing = false;
-            this.btn_edit.Location = new System.Drawing.Point(337, 21);
+            this.btn_edit.Location = new System.Drawing.Point(362, 21);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.PushedAlways = false;
             this.btn_edit.SecondBorderColor = System.Drawing.Color.Red;
@@ -138,7 +142,7 @@
             this.btn_edit.SecondBorderWidth = 3F;
             this.btn_edit.ShowFirstBorder = true;
             this.btn_edit.ShowSecondBorder = false;
-            this.btn_edit.Size = new System.Drawing.Size(93, 30);
+            this.btn_edit.Size = new System.Drawing.Size(110, 30);
             this.btn_edit.Style = BehComponents.ButtonX.ButtonStyles.Blue;
             this.btn_edit.TabIndex = 1;
             this.btn_edit.Text = "ویرایش";
@@ -158,7 +162,7 @@
             this.btn_add.IsBolded = false;
             this.btn_add.IsHoliday = false;
             this.btn_add.IsTrailing = false;
-            this.btn_add.Location = new System.Drawing.Point(478, 21);
+            this.btn_add.Location = new System.Drawing.Point(488, 21);
             this.btn_add.Name = "btn_add";
             this.btn_add.PushedAlways = false;
             this.btn_add.SecondBorderColor = System.Drawing.Color.Red;
@@ -166,7 +170,7 @@
             this.btn_add.SecondBorderWidth = 3F;
             this.btn_add.ShowFirstBorder = true;
             this.btn_add.ShowSecondBorder = false;
-            this.btn_add.Size = new System.Drawing.Size(120, 30);
+            this.btn_add.Size = new System.Drawing.Size(110, 30);
             this.btn_add.Style = BehComponents.ButtonX.ButtonStyles.Blue;
             this.btn_add.TabIndex = 0;
             this.btn_add.Text = "ثبت اطلاعات";

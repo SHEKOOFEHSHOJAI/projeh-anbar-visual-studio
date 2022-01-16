@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.عملیاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.m_tarif_karbar = new System.Windows.Forms.ToolStripMenuItem();
@@ -244,6 +245,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1370, 750);
             this.Controls.Add(this.tooltip);
             this.Controls.Add(this.menuStrip1);

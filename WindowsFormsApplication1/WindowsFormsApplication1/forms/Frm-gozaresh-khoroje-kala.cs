@@ -50,40 +50,5 @@ namespace WindowsFormsApplication1.forms
             }
             data_grid_gozaresh_khoroj.DataSource = q.ToList();
         }
-
-
-
-        public void f_load()
-        {
-            var q = con.khorojes.Select(t => t);
-            data_grid_gozaresh_khoroj.DataSource = q.ToList();
-
-            data_grid_gozaresh_khoroj.Columns[0].Visible = false;
-            data_grid_gozaresh_khoroj.Columns[1].HeaderText = "تاریخ";
-            data_grid_gozaresh_khoroj.Columns[2].HeaderText = "نام کالا";
-
-            data_grid_gozaresh_khoroj.Columns[3].HeaderText = "مدل کالا";
-            data_grid_gozaresh_khoroj.Columns[4].HeaderText = " تعداد";
-            data_grid_gozaresh_khoroj.Columns[5].HeaderText = "تحویل دهنده";
-
-            data_grid_gozaresh_khoroj.Columns[6].HeaderText = "تحویل گیرنده";
-            data_grid_gozaresh_khoroj.Columns[7].HeaderText = "گروه کالا";
-
-
-
-            data_grid_gozaresh_khoroj.Columns[8].HeaderText = "تماس";
-            data_grid_gozaresh_khoroj.Columns[9].HeaderText = "ادرس";
-
-
-
-
-
-
-        }
-
-        private void Frm_gozaresh_khoroje_kala_Load(object sender, EventArgs e)
-        {
-            f_load();
-        }
     }
 }
