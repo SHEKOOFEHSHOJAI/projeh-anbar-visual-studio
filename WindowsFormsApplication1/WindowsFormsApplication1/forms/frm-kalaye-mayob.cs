@@ -59,7 +59,13 @@ namespace WindowsFormsApplication1.forms
             data_grid_mayob.Columns[3].HeaderText = "مدل کالا";
             data_grid_mayob.Columns[4].HeaderText = "تعداد";
             data_grid_mayob.Columns[5].HeaderText = "توضیحات";
-           
+
+            data_grid_mayob.Columns[1].Width = 100;
+            data_grid_mayob.Columns[2].Width = 100;
+            data_grid_mayob.Columns[3].Width = 100;
+            data_grid_mayob.Columns[4].Width = 100;
+            data_grid_mayob.Columns[5].Width = 275;
+
         }
 
         private void como_goroh_kala_SelectedIndexChanged(object sender, EventArgs e)
@@ -126,6 +132,11 @@ namespace WindowsFormsApplication1.forms
            
             txt_tedad.Clear();
             txt_discription.Clear();
+        }
+
+        private void data_grid_mayob_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

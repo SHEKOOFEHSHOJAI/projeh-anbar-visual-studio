@@ -65,4 +65,9 @@ namespace WindowsFormsApplication1.forms
         {
             f_load();
         }
+
+        private void data_gozaresh_vorod_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     } }

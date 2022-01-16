@@ -321,6 +321,7 @@
             this.data_grid_mayob.Name = "data_grid_mayob";
             this.data_grid_mayob.Size = new System.Drawing.Size(717, 250);
             this.data_grid_mayob.TabIndex = 0;
+            this.data_grid_mayob.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_grid_mayob_CellContentClick);
             this.data_grid_mayob.Click += new System.EventHandler(this.data_grid_mayob_Click);
             // 
             // frm_kalaye_mayob

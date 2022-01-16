@@ -16,5 +16,10 @@ namespace WindowsFormsApplication1.forms
         {
             InitializeComponent();
         }
+
+        private void data_grid_personel_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
