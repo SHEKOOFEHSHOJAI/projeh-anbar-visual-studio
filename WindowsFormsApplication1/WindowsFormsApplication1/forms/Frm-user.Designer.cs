@@ -60,10 +60,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("B Nazanin", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label5.Location = new System.Drawing.Point(182, 44);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 18);
+            this.label5.Size = new System.Drawing.Size(83, 24);
             this.label5.TabIndex = 6;
             this.label5.Text = "سطح کاربری";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -71,11 +72,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("B Nazanin", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.Location = new System.Drawing.Point(685, 102);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 18);
+            this.label4.Size = new System.Drawing.Size(71, 24);
             this.label4.TabIndex = 5;
             this.label4.Text = "نام کاربری";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -83,30 +84,33 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("B Nazanin", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label3.Location = new System.Drawing.Point(440, 105);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 18);
+            this.label3.Size = new System.Drawing.Size(60, 24);
             this.label3.TabIndex = 4;
             this.label3.Text = "رمز عبور";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("B Nazanin", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label2.Location = new System.Drawing.Point(426, 49);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 18);
+            this.label2.Size = new System.Drawing.Size(84, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "نام خانوادگی";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("B Nazanin", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.Location = new System.Drawing.Point(685, 54);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 18);
+            this.label1.Size = new System.Drawing.Size(26, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "نام";
             // 
@@ -201,11 +205,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("B Nazanin", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label7.Location = new System.Drawing.Point(169, 96);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 18);
+            this.label7.Size = new System.Drawing.Size(93, 24);
             this.label7.TabIndex = 7;
             this.label7.Text = "تکرار رمز عبور";
             // 
@@ -224,13 +228,16 @@
             // btn_delete
             // 
             this.btn_delete.BoldedForeColor = System.Drawing.Color.Blue;
+            this.btn_delete.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_delete.HolidayForeColor = System.Drawing.Color.Red;
+            this.btn_delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.Image")));
+            this.btn_delete.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btn_delete.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btn_delete.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
             this.btn_delete.IsBolded = false;
             this.btn_delete.IsHoliday = false;
             this.btn_delete.IsTrailing = false;
-            this.btn_delete.Location = new System.Drawing.Point(212, 21);
+            this.btn_delete.Location = new System.Drawing.Point(244, 20);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.PushedAlways = false;
             this.btn_delete.SecondBorderColor = System.Drawing.Color.Red;
@@ -238,7 +245,7 @@
             this.btn_delete.SecondBorderWidth = 3F;
             this.btn_delete.ShowFirstBorder = true;
             this.btn_delete.ShowSecondBorder = false;
-            this.btn_delete.Size = new System.Drawing.Size(97, 30);
+            this.btn_delete.Size = new System.Drawing.Size(111, 30);
             this.btn_delete.Style = BehComponents.ButtonX.ButtonStyles.Blue;
             this.btn_delete.TabIndex = 2;
             this.btn_delete.Text = "حذف";
@@ -249,13 +256,14 @@
             // btn_close
             // 
             this.btn_close.BoldedForeColor = System.Drawing.Color.Blue;
+            this.btn_close.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_close.HolidayForeColor = System.Drawing.Color.Red;
             this.btn_close.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btn_close.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
             this.btn_close.IsBolded = false;
             this.btn_close.IsHoliday = false;
             this.btn_close.IsTrailing = false;
-            this.btn_close.Location = new System.Drawing.Point(91, 21);
+            this.btn_close.Location = new System.Drawing.Point(115, 20);
             this.btn_close.Name = "btn_close";
             this.btn_close.PushedAlways = false;
             this.btn_close.SecondBorderColor = System.Drawing.Color.Red;
@@ -263,7 +271,7 @@
             this.btn_close.SecondBorderWidth = 3F;
             this.btn_close.ShowFirstBorder = true;
             this.btn_close.ShowSecondBorder = false;
-            this.btn_close.Size = new System.Drawing.Size(97, 30);
+            this.btn_close.Size = new System.Drawing.Size(111, 30);
             this.btn_close.Style = BehComponents.ButtonX.ButtonStyles.Blue;
             this.btn_close.TabIndex = 3;
             this.btn_close.Text = "خروج";
@@ -274,13 +282,16 @@
             // btn_edit
             // 
             this.btn_edit.BoldedForeColor = System.Drawing.Color.Blue;
+            this.btn_edit.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_edit.HolidayForeColor = System.Drawing.Color.Red;
+            this.btn_edit.Image = ((System.Drawing.Image)(resources.GetObject("btn_edit.Image")));
+            this.btn_edit.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btn_edit.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btn_edit.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
             this.btn_edit.IsBolded = false;
             this.btn_edit.IsHoliday = false;
             this.btn_edit.IsTrailing = false;
-            this.btn_edit.Location = new System.Drawing.Point(337, 21);
+            this.btn_edit.Location = new System.Drawing.Point(361, 20);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.PushedAlways = false;
             this.btn_edit.SecondBorderColor = System.Drawing.Color.Red;
@@ -288,7 +299,7 @@
             this.btn_edit.SecondBorderWidth = 3F;
             this.btn_edit.ShowFirstBorder = true;
             this.btn_edit.ShowSecondBorder = false;
-            this.btn_edit.Size = new System.Drawing.Size(93, 30);
+            this.btn_edit.Size = new System.Drawing.Size(111, 30);
             this.btn_edit.Style = BehComponents.ButtonX.ButtonStyles.Blue;
             this.btn_edit.TabIndex = 1;
             this.btn_edit.Text = "ویرایش";
@@ -299,13 +310,16 @@
             // btn_add
             // 
             this.btn_add.BoldedForeColor = System.Drawing.Color.Blue;
+            this.btn_add.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btn_add.HolidayForeColor = System.Drawing.Color.Red;
+            this.btn_add.Image = ((System.Drawing.Image)(resources.GetObject("btn_add.Image")));
+            this.btn_add.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btn_add.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btn_add.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
             this.btn_add.IsBolded = false;
             this.btn_add.IsHoliday = false;
             this.btn_add.IsTrailing = false;
-            this.btn_add.Location = new System.Drawing.Point(478, 21);
+            this.btn_add.Location = new System.Drawing.Point(494, 20);
             this.btn_add.Name = "btn_add";
             this.btn_add.PushedAlways = false;
             this.btn_add.SecondBorderColor = System.Drawing.Color.Red;
@@ -313,7 +327,7 @@
             this.btn_add.SecondBorderWidth = 3F;
             this.btn_add.ShowFirstBorder = true;
             this.btn_add.ShowSecondBorder = false;
-            this.btn_add.Size = new System.Drawing.Size(88, 30);
+            this.btn_add.Size = new System.Drawing.Size(111, 30);
             this.btn_add.Style = BehComponents.ButtonX.ButtonStyles.Blue;
             this.btn_add.TabIndex = 0;
             this.btn_add.Text = "ثبت اطلاعات";

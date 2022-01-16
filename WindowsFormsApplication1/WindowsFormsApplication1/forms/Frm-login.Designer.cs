@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_usename = new System.Windows.Forms.TextBox();
+            this.txt_ramz_obor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_khoroj = new BehComponents.ButtonX();
             this.btn_vorod = new BehComponents.ButtonX();
-            this.txt_ramz_obor = new System.Windows.Forms.TextBox();
-            this.txt_usename = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +49,23 @@
             this.groupBox1.Size = new System.Drawing.Size(487, 180);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // txt_usename
+            // 
+            this.txt_usename.Location = new System.Drawing.Point(125, 19);
+            this.txt_usename.Multiline = true;
+            this.txt_usename.Name = "txt_usename";
+            this.txt_usename.Size = new System.Drawing.Size(209, 36);
+            this.txt_usename.TabIndex = 1;
+            // 
+            // txt_ramz_obor
+            // 
+            this.txt_ramz_obor.Location = new System.Drawing.Point(125, 87);
+            this.txt_ramz_obor.Multiline = true;
+            this.txt_ramz_obor.Name = "txt_ramz_obor";
+            this.txt_ramz_obor.PasswordChar = '*';
+            this.txt_ramz_obor.Size = new System.Drawing.Size(209, 36);
+            this.txt_ramz_obor.TabIndex = 2;
             // 
             // label2
             // 
@@ -80,7 +97,7 @@
             this.btn_khoroj.IsBolded = false;
             this.btn_khoroj.IsHoliday = false;
             this.btn_khoroj.IsTrailing = false;
-            this.btn_khoroj.Location = new System.Drawing.Point(362, 218);
+            this.btn_khoroj.Location = new System.Drawing.Point(280, 218);
             this.btn_khoroj.Name = "btn_khoroj";
             this.btn_khoroj.PushedAlways = false;
             this.btn_khoroj.SecondBorderColor = System.Drawing.Color.Red;
@@ -106,7 +123,7 @@
             this.btn_vorod.IsBolded = false;
             this.btn_vorod.IsHoliday = false;
             this.btn_vorod.IsTrailing = false;
-            this.btn_vorod.Location = new System.Drawing.Point(203, 218);
+            this.btn_vorod.Location = new System.Drawing.Point(157, 218);
             this.btn_vorod.Name = "btn_vorod";
             this.btn_vorod.PushedAlways = false;
             this.btn_vorod.SecondBorderColor = System.Drawing.Color.Red;
@@ -121,23 +138,6 @@
             this.btn_vorod.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_vorod.UseVisualStyleBackColor = true;
             this.btn_vorod.Click += new System.EventHandler(this.btn_vorod_Click);
-            // 
-            // txt_ramz_obor
-            // 
-            this.txt_ramz_obor.Location = new System.Drawing.Point(125, 87);
-            this.txt_ramz_obor.Multiline = true;
-            this.txt_ramz_obor.Name = "txt_ramz_obor";
-            this.txt_ramz_obor.PasswordChar = '*';
-            this.txt_ramz_obor.Size = new System.Drawing.Size(209, 36);
-            this.txt_ramz_obor.TabIndex = 2;
-            // 
-            // txt_usename
-            // 
-            this.txt_usename.Location = new System.Drawing.Point(125, 19);
-            this.txt_usename.Multiline = true;
-            this.txt_usename.Name = "txt_usename";
-            this.txt_usename.Size = new System.Drawing.Size(209, 36);
-            this.txt_usename.TabIndex = 1;
             // 
             // Frm_login
             // 
