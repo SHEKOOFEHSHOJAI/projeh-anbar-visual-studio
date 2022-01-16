@@ -92,6 +92,7 @@
             this.data_gozaresh_vorod.Name = "data_gozaresh_vorod";
             this.data_gozaresh_vorod.Size = new System.Drawing.Size(717, 250);
             this.data_gozaresh_vorod.TabIndex = 1;
+            this.data_gozaresh_vorod.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_gozaresh_vorod_CellContentClick);
             // 
             // groupBox2
             // 
