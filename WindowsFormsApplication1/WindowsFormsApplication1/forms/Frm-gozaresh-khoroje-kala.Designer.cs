@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_gozaresh_khoroje_kala));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_print = new BehComponents.ButtonX();
-            this.data_grid_personel = new BehComponents.DataGridViewX(this.components);
+            this.data_grid_gozaresh_khoroj = new BehComponents.DataGridViewX(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txt_date_az = new System.Windows.Forms.RichTextBox();
             this.txt_date_ta = new System.Windows.Forms.RichTextBox();
@@ -43,14 +43,14 @@
             this.rdb_barhasb = new System.Windows.Forms.RadioButton();
             this.rdb_date = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.data_grid_personel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_gozaresh_khoroj)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btn_print);
-            this.groupBox1.Controls.Add(this.data_grid_personel);
+            this.groupBox1.Controls.Add(this.data_grid_gozaresh_khoroj);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Location = new System.Drawing.Point(-8, 3);
             this.groupBox1.Name = "groupBox1";
@@ -83,16 +83,16 @@
             this.btn_print.TrailingForeColor = System.Drawing.Color.LightGray;
             this.btn_print.UseVisualStyleBackColor = true;
             // 
-            // data_grid_personel
+            // data_grid_gozaresh_khoroj
             // 
-            this.data_grid_personel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_grid_personel.Columns_EnglishDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_personel.Columns_EnglishDate")));
-            this.data_grid_personel.Columns_PersianDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_personel.Columns_PersianDate")));
-            this.data_grid_personel.Location = new System.Drawing.Point(21, 198);
-            this.data_grid_personel.Name = "data_grid_personel";
-            this.data_grid_personel.Size = new System.Drawing.Size(717, 250);
-            this.data_grid_personel.TabIndex = 1;
-            this.data_grid_personel.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_grid_personel_CellContentClick);
+            this.data_grid_gozaresh_khoroj.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_grid_gozaresh_khoroj.Columns_EnglishDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_gozaresh_khoroj.Columns_EnglishDate")));
+            this.data_grid_gozaresh_khoroj.Columns_PersianDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_gozaresh_khoroj.Columns_PersianDate")));
+            this.data_grid_gozaresh_khoroj.Location = new System.Drawing.Point(21, 198);
+            this.data_grid_gozaresh_khoroj.Name = "data_grid_gozaresh_khoroj";
+            this.data_grid_gozaresh_khoroj.Size = new System.Drawing.Size(717, 250);
+            this.data_grid_gozaresh_khoroj.TabIndex = 1;
+            this.data_grid_gozaresh_khoroj.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_grid_personel_CellContentClick);
             // 
             // groupBox2
             // 
@@ -137,6 +137,7 @@
             this.txt_search.Size = new System.Drawing.Size(121, 27);
             this.txt_search.TabIndex = 8;
             this.txt_search.Text = "";
+            this.txt_search.TextChanged += new System.EventHandler(this.txt_search_TextChanged);
             // 
             // label2
             // 
@@ -171,7 +172,7 @@
             // rdb_barhasb
             // 
             this.rdb_barhasb.AutoSize = true;
-            this.rdb_barhasb.Location = new System.Drawing.Point(628, 86);
+            this.rdb_barhasb.Location = new System.Drawing.Point(641, 84);
             this.rdb_barhasb.Name = "rdb_barhasb";
             this.rdb_barhasb.Size = new System.Drawing.Size(69, 27);
             this.rdb_barhasb.TabIndex = 1;
@@ -203,8 +204,9 @@
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "گزارش کالای خارج شده";
+            this.Load += new System.EventHandler(this.Frm_gozaresh_khoroje_kala_Load);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.data_grid_personel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_gozaresh_khoroj)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -214,7 +216,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private BehComponents.DataGridViewX data_grid_personel;
+        private BehComponents.DataGridViewX data_grid_gozaresh_khoroj;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
