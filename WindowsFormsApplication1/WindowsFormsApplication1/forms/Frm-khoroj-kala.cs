@@ -53,30 +53,33 @@ namespace WindowsFormsApplication1.forms
             /////
             txt_tarikh.Clear();
             txt_tedad.Clear();
+            txt_tell.Clear();
+            txt_adress_tahvil_girandeh.Clear();
             txt_tahvil_girandeh.Clear();
         }
         public void f_load (){
             var q = con.khorojes.Select(t => t);
             data_grid_khoroj.DataSource = q.ToList();
-           
+
             data_grid_khoroj.Columns[0].Visible = false;
             data_grid_khoroj.Columns[1].HeaderText = "تاریخ";
-            data_grid_khoroj.Columns[2].HeaderText = "گروه کالا";
-            data_grid_khoroj.Columns[3].HeaderText = "نام کالا";
-            data_grid_khoroj.Columns[4].HeaderText = "مدل کالا";
-            data_grid_khoroj.Columns[5].HeaderText = " تعداد";
-            data_grid_khoroj.Columns[6].HeaderText = "تحویل دهنده";
+            data_grid_khoroj.Columns[2].HeaderText = "نام کالا";
 
-            data_grid_khoroj.Columns[7].HeaderText = "تحویل گیرنده";
-            
-           
-          
+            data_grid_khoroj.Columns[3].HeaderText = "مدل کالا";
+            data_grid_khoroj.Columns[4].HeaderText = " تعداد";
+            data_grid_khoroj.Columns[5].HeaderText = "تحویل دهنده";
+
+            data_grid_khoroj.Columns[6].HeaderText = "تحویل گیرنده";
+            data_grid_khoroj.Columns[7].HeaderText = "گروه کالا";
+
+
+
             data_grid_khoroj.Columns[8].HeaderText = "تماس";
             data_grid_khoroj.Columns[9].HeaderText = "ادرس";
 
 
 
-    
+
 
 
         }

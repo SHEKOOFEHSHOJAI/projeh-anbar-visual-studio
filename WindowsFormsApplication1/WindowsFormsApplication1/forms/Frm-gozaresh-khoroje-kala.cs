@@ -60,13 +60,14 @@ namespace WindowsFormsApplication1.forms
 
             data_grid_gozaresh_khoroj.Columns[0].Visible = false;
             data_grid_gozaresh_khoroj.Columns[1].HeaderText = "تاریخ";
-            data_grid_gozaresh_khoroj.Columns[2].HeaderText = "گروه کالا";
-            data_grid_gozaresh_khoroj.Columns[3].HeaderText = "نام کالا";
-            data_grid_gozaresh_khoroj.Columns[4].HeaderText = "مدل کالا";
-            data_grid_gozaresh_khoroj.Columns[5].HeaderText = " تعداد";
-            data_grid_gozaresh_khoroj.Columns[6].HeaderText = "تحویل دهنده";
+            data_grid_gozaresh_khoroj.Columns[2].HeaderText = "نام کالا";
 
-            data_grid_gozaresh_khoroj.Columns[7].HeaderText = "تحویل گیرنده";
+            data_grid_gozaresh_khoroj.Columns[3].HeaderText = "مدل کالا";
+            data_grid_gozaresh_khoroj.Columns[4].HeaderText = " تعداد";
+            data_grid_gozaresh_khoroj.Columns[5].HeaderText = "تحویل دهنده";
+
+            data_grid_gozaresh_khoroj.Columns[6].HeaderText = "تحویل گیرنده";
+            data_grid_gozaresh_khoroj.Columns[7].HeaderText = "گروه کالا";
 
 
 
