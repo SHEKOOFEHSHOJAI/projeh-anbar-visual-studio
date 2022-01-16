@@ -163,7 +163,7 @@ namespace WindowsFormsApplication1.forms
         private void com_model_kala_SelectedIndexChanged(object sender, EventArgs e)
         {
             //وصل شو به پایگاه و چک کن اون مدلی ک انتخاب کردین با مدل پایگاه برابر است و اون ردیف رو برگردون
-            var q = con.khorojes.Where(y => y.model == com_model_kala.Text).Select(t => t).ToList();
+            var q = con.vorods.Where(y => y.model == com_model_kala.Text).Select(t => t).ToList();
             foreach(var x in q)
             {
                txt_tedad.Text = x.count.ToString();
