@@ -311,7 +311,7 @@
             this.btn_delete.IsBolded = false;
             this.btn_delete.IsHoliday = false;
             this.btn_delete.IsTrailing = false;
-            this.btn_delete.Location = new System.Drawing.Point(212, 21);
+            this.btn_delete.Location = new System.Drawing.Point(228, 21);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.PushedAlways = false;
             this.btn_delete.SecondBorderColor = System.Drawing.Color.Red;
@@ -319,7 +319,7 @@
             this.btn_delete.SecondBorderWidth = 3F;
             this.btn_delete.ShowFirstBorder = true;
             this.btn_delete.ShowSecondBorder = false;
-            this.btn_delete.Size = new System.Drawing.Size(97, 30);
+            this.btn_delete.Size = new System.Drawing.Size(107, 28);
             this.btn_delete.Style = BehComponents.ButtonX.ButtonStyles.Blue;
             this.btn_delete.TabIndex = 2;
             this.btn_delete.Text = "حذف";
@@ -337,7 +337,7 @@
             this.btn_close.IsBolded = false;
             this.btn_close.IsHoliday = false;
             this.btn_close.IsTrailing = false;
-            this.btn_close.Location = new System.Drawing.Point(86, 19);
+            this.btn_close.Location = new System.Drawing.Point(102, 19);
             this.btn_close.Name = "btn_close";
             this.btn_close.PushedAlways = false;
             this.btn_close.SecondBorderColor = System.Drawing.Color.Red;
@@ -345,7 +345,7 @@
             this.btn_close.SecondBorderWidth = 3F;
             this.btn_close.ShowFirstBorder = true;
             this.btn_close.ShowSecondBorder = false;
-            this.btn_close.Size = new System.Drawing.Size(97, 30);
+            this.btn_close.Size = new System.Drawing.Size(107, 30);
             this.btn_close.Style = BehComponents.ButtonX.ButtonStyles.Blue;
             this.btn_close.TabIndex = 3;
             this.btn_close.Text = "خروج";
@@ -365,7 +365,7 @@
             this.btn_edit.IsBolded = false;
             this.btn_edit.IsHoliday = false;
             this.btn_edit.IsTrailing = false;
-            this.btn_edit.Location = new System.Drawing.Point(337, 21);
+            this.btn_edit.Location = new System.Drawing.Point(353, 21);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.PushedAlways = false;
             this.btn_edit.SecondBorderColor = System.Drawing.Color.Red;
@@ -373,7 +373,7 @@
             this.btn_edit.SecondBorderWidth = 3F;
             this.btn_edit.ShowFirstBorder = true;
             this.btn_edit.ShowSecondBorder = false;
-            this.btn_edit.Size = new System.Drawing.Size(101, 30);
+            this.btn_edit.Size = new System.Drawing.Size(107, 30);
             this.btn_edit.Style = BehComponents.ButtonX.ButtonStyles.Blue;
             this.btn_edit.TabIndex = 1;
             this.btn_edit.Text = "ویرایش";

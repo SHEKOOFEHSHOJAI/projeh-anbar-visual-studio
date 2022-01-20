@@ -147,5 +147,10 @@ namespace WindowsFormsApplication1.forms
             txt_pass.Text = data_grid_user.SelectedRows[0].Cells[5].Value.ToString();
             txt_tekrar_pass.Text = data_grid_user.SelectedRows[0].Cells[5].Value.ToString();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

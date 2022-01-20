@@ -143,6 +143,7 @@
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "اطلاعات را وارد کنید";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txt_tekrar_pass
             // 
@@ -152,7 +153,7 @@
             this.txt_tekrar_pass.Name = "txt_tekrar_pass";
             this.txt_tekrar_pass.PasswordChar = '*';
             this.txt_tekrar_pass.Size = new System.Drawing.Size(161, 29);
-            this.txt_tekrar_pass.TabIndex = 12;
+            this.txt_tekrar_pass.TabIndex = 6;
             // 
             // txt_pass
             // 
@@ -162,7 +163,7 @@
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.PasswordChar = '*';
             this.txt_pass.Size = new System.Drawing.Size(161, 29);
-            this.txt_pass.TabIndex = 11;
+            this.txt_pass.TabIndex = 5;
             this.txt_pass.TextChanged += new System.EventHandler(this.txt_pass_TextChanged);
             // 
             // txt_namfamily
@@ -172,7 +173,7 @@
             this.txt_namfamily.Multiline = true;
             this.txt_namfamily.Name = "txt_namfamily";
             this.txt_namfamily.Size = new System.Drawing.Size(161, 30);
-            this.txt_namfamily.TabIndex = 10;
+            this.txt_namfamily.TabIndex = 2;
             // 
             // txt_user_name
             // 
@@ -181,7 +182,7 @@
             this.txt_user_name.Multiline = true;
             this.txt_user_name.Name = "txt_user_name";
             this.txt_user_name.Size = new System.Drawing.Size(161, 29);
-            this.txt_user_name.TabIndex = 9;
+            this.txt_user_name.TabIndex = 4;
             // 
             // txt_name
             // 
@@ -190,7 +191,7 @@
             this.txt_name.Multiline = true;
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(161, 27);
-            this.txt_name.TabIndex = 4;
+            this.txt_name.TabIndex = 1;
             // 
             // cmb_sath_karbari
             // 
@@ -205,7 +206,7 @@
             this.cmb_sath_karbari.Location = new System.Drawing.Point(9, 42);
             this.cmb_sath_karbari.Name = "cmb_sath_karbari";
             this.cmb_sath_karbari.Size = new System.Drawing.Size(159, 30);
-            this.cmb_sath_karbari.TabIndex = 8;
+            this.cmb_sath_karbari.TabIndex = 3;
             // 
             // label7
             // 
