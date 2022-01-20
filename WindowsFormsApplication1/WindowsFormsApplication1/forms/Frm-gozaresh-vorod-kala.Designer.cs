@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_gozaresh_vorod_kala));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonX1 = new BehComponents.ButtonX();
             this.data_gozaresh_vorod = new BehComponents.DataGridViewX(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txt_search = new System.Windows.Forms.RichTextBox();
@@ -41,7 +42,6 @@
             this.cmb_search = new System.Windows.Forms.ComboBox();
             this.radb_barhasb = new System.Windows.Forms.RadioButton();
             this.radb_date = new System.Windows.Forms.RadioButton();
-            this.buttonX1 = new BehComponents.ButtonX();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data_gozaresh_vorod)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -57,6 +57,32 @@
             this.groupBox1.Size = new System.Drawing.Size(758, 518);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.BoldedForeColor = System.Drawing.Color.Blue;
+            this.buttonX1.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.buttonX1.HolidayForeColor = System.Drawing.Color.Red;
+            this.buttonX1.Image = ((System.Drawing.Image)(resources.GetObject("buttonX1.Image")));
+            this.buttonX1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.buttonX1.ImageFixedSize = new System.Drawing.Size(0, 0);
+            this.buttonX1.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
+            this.buttonX1.IsBolded = false;
+            this.buttonX1.IsHoliday = false;
+            this.buttonX1.IsTrailing = false;
+            this.buttonX1.Location = new System.Drawing.Point(12, 456);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.PushedAlways = false;
+            this.buttonX1.SecondBorderColor = System.Drawing.Color.Red;
+            this.buttonX1.SecondBorderDistanceToEdge = 3F;
+            this.buttonX1.SecondBorderWidth = 3F;
+            this.buttonX1.ShowFirstBorder = true;
+            this.buttonX1.ShowSecondBorder = false;
+            this.buttonX1.Size = new System.Drawing.Size(51, 52);
+            this.buttonX1.Style = BehComponents.ButtonX.ButtonStyles.Blue;
+            this.buttonX1.TabIndex = 4;
+            this.buttonX1.TrailingForeColor = System.Drawing.Color.LightGray;
+            this.buttonX1.UseVisualStyleBackColor = true;
             // 
             // data_gozaresh_vorod
             // 
@@ -140,7 +166,7 @@
             "گروه کالا",
             "نام کالا",
             "مدل کالا"});
-            this.cmb_search.Location = new System.Drawing.Point(400, 83);
+            this.cmb_search.Location = new System.Drawing.Point(400, 81);
             this.cmb_search.Name = "cmb_search";
             this.cmb_search.Size = new System.Drawing.Size(121, 31);
             this.cmb_search.TabIndex = 2;
@@ -148,7 +174,7 @@
             // radb_barhasb
             // 
             this.radb_barhasb.AutoSize = true;
-            this.radb_barhasb.Location = new System.Drawing.Point(628, 86);
+            this.radb_barhasb.Location = new System.Drawing.Point(641, 84);
             this.radb_barhasb.Name = "radb_barhasb";
             this.radb_barhasb.Size = new System.Drawing.Size(69, 27);
             this.radb_barhasb.TabIndex = 1;
@@ -166,32 +192,6 @@
             this.radb_date.TabStop = true;
             this.radb_date.Text = "برحسب تاریخ";
             this.radb_date.UseVisualStyleBackColor = true;
-            // 
-            // buttonX1
-            // 
-            this.buttonX1.BoldedForeColor = System.Drawing.Color.Blue;
-            this.buttonX1.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.buttonX1.HolidayForeColor = System.Drawing.Color.Red;
-            this.buttonX1.Image = ((System.Drawing.Image)(resources.GetObject("buttonX1.Image")));
-            this.buttonX1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.buttonX1.ImageFixedSize = new System.Drawing.Size(0, 0);
-            this.buttonX1.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
-            this.buttonX1.IsBolded = false;
-            this.buttonX1.IsHoliday = false;
-            this.buttonX1.IsTrailing = false;
-            this.buttonX1.Location = new System.Drawing.Point(12, 456);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.PushedAlways = false;
-            this.buttonX1.SecondBorderColor = System.Drawing.Color.Red;
-            this.buttonX1.SecondBorderDistanceToEdge = 3F;
-            this.buttonX1.SecondBorderWidth = 3F;
-            this.buttonX1.ShowFirstBorder = true;
-            this.buttonX1.ShowSecondBorder = false;
-            this.buttonX1.Size = new System.Drawing.Size(51, 52);
-            this.buttonX1.Style = BehComponents.ButtonX.ButtonStyles.Blue;
-            this.buttonX1.TabIndex = 4;
-            this.buttonX1.TrailingForeColor = System.Drawing.Color.LightGray;
-            this.buttonX1.UseVisualStyleBackColor = true;
             // 
             // Frm_gozaresh_vorod_kala
             // 

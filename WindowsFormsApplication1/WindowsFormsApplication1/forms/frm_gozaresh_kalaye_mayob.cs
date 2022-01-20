@@ -61,10 +61,12 @@ namespace WindowsFormsApplication1.forms
             data_grid_gozaresh_mayob.DataSource = q.ToList();
 
             data_grid_gozaresh_mayob.Columns[0].Visible = false;
-            data_grid_gozaresh_mayob.Columns[1].HeaderText = "تاریخ";
-            data_grid_gozaresh_mayob.Columns[2].HeaderText = "گروه کالا";
-            data_grid_gozaresh_mayob.Columns[3].HeaderText = "نام کالا";
-            data_grid_gozaresh_mayob.Columns[4].HeaderText = "مدل کالا ";
+          
+            data_grid_gozaresh_mayob.Columns[1].HeaderText = "گروه کالا";
+            data_grid_gozaresh_mayob.Columns[2].HeaderText = "نام کالا";
+            data_grid_gozaresh_mayob.Columns[3].HeaderText = "مدل کالا ";
+            data_grid_gozaresh_mayob.Columns[4].HeaderText = "تعداد";
+            data_grid_gozaresh_mayob.Columns[5].HeaderText = "توضیحات";
             //////
             data_grid_gozaresh_mayob.Columns[1].Width = 100;
             data_grid_gozaresh_mayob.Columns[2].Width = 100;

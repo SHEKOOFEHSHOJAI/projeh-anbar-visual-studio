@@ -47,9 +47,9 @@
             this.groupBox1.Controls.Add(this.buttonX1);
             this.groupBox1.Controls.Add(this.data_grid_gozaresh_mayob);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Location = new System.Drawing.Point(0, 2);
+            this.groupBox1.Location = new System.Drawing.Point(0, -3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(758, 518);
+            this.groupBox1.Size = new System.Drawing.Size(758, 523);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
@@ -97,9 +97,9 @@
             this.groupBox2.Controls.Add(this.txt_search);
             this.groupBox2.Controls.Add(this.cmb_search);
             this.groupBox2.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.groupBox2.Location = new System.Drawing.Point(6, 25);
+            this.groupBox2.Location = new System.Drawing.Point(6, 19);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(746, 128);
+            this.groupBox2.Size = new System.Drawing.Size(746, 115);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             // 

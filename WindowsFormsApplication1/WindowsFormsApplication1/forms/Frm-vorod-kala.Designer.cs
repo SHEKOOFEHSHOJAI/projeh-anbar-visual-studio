@@ -88,7 +88,7 @@
             // 
             // txt_tell_tahvilgirandeh
             // 
-            this.txt_tell_tahvilgirandeh.Location = new System.Drawing.Point(269, 136);
+            this.txt_tell_tahvilgirandeh.Location = new System.Drawing.Point(259, 133);
             this.txt_tell_tahvilgirandeh.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_tell_tahvilgirandeh.Name = "txt_tell_tahvilgirandeh";
             this.txt_tell_tahvilgirandeh.Size = new System.Drawing.Size(159, 26);
@@ -99,16 +99,16 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label8.Location = new System.Drawing.Point(433, 140);
+            this.label8.Location = new System.Drawing.Point(430, 136);
             this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 23);
+            this.label8.Size = new System.Drawing.Size(41, 23);
             this.label8.TabIndex = 17;
-            this.label8.Text = "شماره تماس";
+            this.label8.Text = "تماس";
             // 
             // txt_tahvil_dahandeh
             // 
-            this.txt_tahvil_dahandeh.Location = new System.Drawing.Point(511, 136);
+            this.txt_tahvil_dahandeh.Location = new System.Drawing.Point(492, 136);
             this.txt_tahvil_dahandeh.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_tahvil_dahandeh.Name = "txt_tahvil_dahandeh";
             this.txt_tahvil_dahandeh.Size = new System.Drawing.Size(159, 26);
@@ -119,7 +119,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label6.Location = new System.Drawing.Point(674, 140);
+            this.label6.Location = new System.Drawing.Point(658, 139);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(83, 23);
@@ -130,7 +130,7 @@
             // 
             this.como_tahvil_girandeh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.como_tahvil_girandeh.FormattingEnabled = true;
-            this.como_tahvil_girandeh.Location = new System.Drawing.Point(24, 90);
+            this.como_tahvil_girandeh.Location = new System.Drawing.Point(9, 88);
             this.como_tahvil_girandeh.Name = "como_tahvil_girandeh";
             this.como_tahvil_girandeh.Size = new System.Drawing.Size(157, 21);
             this.como_tahvil_girandeh.TabIndex = 6;
@@ -144,14 +144,14 @@
             "لوازم اداری",
             "لوازم برقی",
             "لوازم ماشین"});
-            this.como_goroh_kala.Location = new System.Drawing.Point(269, 33);
+            this.como_goroh_kala.Location = new System.Drawing.Point(259, 34);
             this.como_goroh_kala.Name = "como_goroh_kala";
-            this.como_goroh_kala.Size = new System.Drawing.Size(153, 21);
+            this.como_goroh_kala.Size = new System.Drawing.Size(159, 21);
             this.como_goroh_kala.TabIndex = 2;
             // 
             // txt_tedad
             // 
-            this.txt_tedad.Location = new System.Drawing.Point(269, 85);
+            this.txt_tedad.Location = new System.Drawing.Point(259, 83);
             this.txt_tedad.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_tedad.Name = "txt_tedad";
             this.txt_tedad.Size = new System.Drawing.Size(159, 26);
@@ -160,7 +160,7 @@
             // 
             // txt_model_kala
             // 
-            this.txt_model_kala.Location = new System.Drawing.Point(512, 85);
+            this.txt_model_kala.Location = new System.Drawing.Point(492, 83);
             this.txt_model_kala.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_model_kala.Name = "txt_model_kala";
             this.txt_model_kala.Size = new System.Drawing.Size(159, 26);
@@ -169,7 +169,7 @@
             // 
             // txt_name_kala
             // 
-            this.txt_name_kala.Location = new System.Drawing.Point(24, 33);
+            this.txt_name_kala.Location = new System.Drawing.Point(9, 33);
             this.txt_name_kala.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_name_kala.Name = "txt_name_kala";
             this.txt_name_kala.Size = new System.Drawing.Size(159, 26);
@@ -180,7 +180,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label7.Location = new System.Drawing.Point(174, 88);
+            this.label7.Location = new System.Drawing.Point(163, 86);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(86, 23);
@@ -191,7 +191,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label5.Location = new System.Drawing.Point(193, 39);
+            this.label5.Location = new System.Drawing.Point(190, 36);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 23);
@@ -222,7 +222,7 @@
             // 
             // txt_tarikh
             // 
-            this.txt_tarikh.Location = new System.Drawing.Point(512, 36);
+            this.txt_tarikh.Location = new System.Drawing.Point(492, 37);
             this.txt_tarikh.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_tarikh.Name = "txt_tarikh";
             this.txt_tarikh.Size = new System.Drawing.Size(159, 25);
@@ -233,7 +233,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label4.Location = new System.Drawing.Point(435, 93);
+            this.label4.Location = new System.Drawing.Point(433, 86);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 23);
@@ -244,7 +244,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label2.Location = new System.Drawing.Point(425, 39);
+            this.label2.Location = new System.Drawing.Point(421, 33);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 23);
@@ -398,7 +398,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 522);
+            this.ClientSize = new System.Drawing.Size(746, 522);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
