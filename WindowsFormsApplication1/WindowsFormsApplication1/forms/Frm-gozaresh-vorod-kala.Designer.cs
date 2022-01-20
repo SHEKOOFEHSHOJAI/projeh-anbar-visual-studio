@@ -42,15 +42,17 @@
             this.cmb_search = new System.Windows.Forms.ComboBox();
             this.radb_barhasb = new System.Windows.Forms.RadioButton();
             this.radb_date = new System.Windows.Forms.RadioButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data_gozaresh_vorod)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.buttonX1);
-            this.groupBox1.Controls.Add(this.data_gozaresh_vorod);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Location = new System.Drawing.Point(1, 3);
             this.groupBox1.Name = "groupBox1";
@@ -89,9 +91,9 @@
             this.data_gozaresh_vorod.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_gozaresh_vorod.Columns_EnglishDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_gozaresh_vorod.Columns_EnglishDate")));
             this.data_gozaresh_vorod.Columns_PersianDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_gozaresh_vorod.Columns_PersianDate")));
-            this.data_gozaresh_vorod.Location = new System.Drawing.Point(12, 183);
+            this.data_gozaresh_vorod.Location = new System.Drawing.Point(15, 34);
             this.data_gozaresh_vorod.Name = "data_gozaresh_vorod";
-            this.data_gozaresh_vorod.Size = new System.Drawing.Size(717, 250);
+            this.data_gozaresh_vorod.Size = new System.Drawing.Size(685, 234);
             this.data_gozaresh_vorod.TabIndex = 1;
             this.data_gozaresh_vorod.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_gozaresh_vorod_CellContentClick);
             // 
@@ -114,7 +116,7 @@
             // 
             // txt_search
             // 
-            this.txt_search.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_search.Location = new System.Drawing.Point(161, 83);
             this.txt_search.Name = "txt_search";
             this.txt_search.Size = new System.Drawing.Size(121, 27);
@@ -124,7 +126,7 @@
             // 
             // txt_date_ta
             // 
-            this.txt_date_ta.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_date_ta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_date_ta.Location = new System.Drawing.Point(161, 22);
             this.txt_date_ta.Name = "txt_date_ta";
             this.txt_date_ta.Size = new System.Drawing.Size(121, 27);
@@ -133,7 +135,7 @@
             // 
             // txt_date_az
             // 
-            this.txt_date_az.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_date_az.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_date_az.Location = new System.Drawing.Point(400, 25);
             this.txt_date_az.Name = "txt_date_az";
             this.txt_date_az.Size = new System.Drawing.Size(121, 27);
@@ -161,6 +163,7 @@
             // cmb_search
             // 
             this.cmb_search.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_search.FormattingEnabled = true;
             this.cmb_search.Items.AddRange(new object[] {
             "گروه کالا",
@@ -168,7 +171,7 @@
             "مدل کالا"});
             this.cmb_search.Location = new System.Drawing.Point(400, 81);
             this.cmb_search.Name = "cmb_search";
-            this.cmb_search.Size = new System.Drawing.Size(121, 31);
+            this.cmb_search.Size = new System.Drawing.Size(121, 24);
             this.cmb_search.TabIndex = 2;
             // 
             // radb_barhasb
@@ -193,6 +196,16 @@
             this.radb_date.Text = "برحسب تاریخ";
             this.radb_date.UseVisualStyleBackColor = true;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.data_gozaresh_vorod);
+            this.groupBox3.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.groupBox3.Location = new System.Drawing.Point(12, 159);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(710, 291);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            // 
             // Frm_gozaresh_vorod_kala
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
@@ -214,6 +227,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.data_gozaresh_vorod)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -232,5 +246,6 @@
         private System.Windows.Forms.RichTextBox txt_date_ta;
         private System.Windows.Forms.RichTextBox txt_date_az;
         private BehComponents.ButtonX buttonX1;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

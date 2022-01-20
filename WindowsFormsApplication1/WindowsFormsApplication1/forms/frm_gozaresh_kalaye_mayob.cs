@@ -72,7 +72,7 @@ namespace WindowsFormsApplication1.forms
             data_grid_gozaresh_mayob.Columns[2].Width = 100;
             data_grid_gozaresh_mayob.Columns[3].Width = 100;
             data_grid_gozaresh_mayob.Columns[4].Width = 100;
-            data_grid_gozaresh_mayob.Columns[5].Width = 275;
+            data_grid_gozaresh_mayob.Columns[5].Width = 284;
 
         }
 

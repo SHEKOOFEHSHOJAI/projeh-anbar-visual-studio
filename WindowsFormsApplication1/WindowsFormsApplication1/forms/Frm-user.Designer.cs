@@ -96,7 +96,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("B Nazanin", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label2.Location = new System.Drawing.Point(426, 49);
+            this.label2.Location = new System.Drawing.Point(426, 44);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 24);
@@ -107,7 +107,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("B Nazanin", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(685, 54);
+            this.label1.Location = new System.Drawing.Point(699, 46);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 24);
@@ -146,8 +146,9 @@
             // 
             // txt_tekrar_pass
             // 
-            this.txt_tekrar_pass.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tekrar_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tekrar_pass.Location = new System.Drawing.Point(7, 94);
+            this.txt_tekrar_pass.Multiline = true;
             this.txt_tekrar_pass.Name = "txt_tekrar_pass";
             this.txt_tekrar_pass.PasswordChar = '*';
             this.txt_tekrar_pass.Size = new System.Drawing.Size(161, 29);
@@ -155,8 +156,9 @@
             // 
             // txt_pass
             // 
-            this.txt_pass.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pass.Location = new System.Drawing.Point(266, 100);
+            this.txt_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pass.Location = new System.Drawing.Point(270, 100);
+            this.txt_pass.Multiline = true;
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.PasswordChar = '*';
             this.txt_pass.Size = new System.Drawing.Size(161, 29);
@@ -165,26 +167,29 @@
             // 
             // txt_namfamily
             // 
-            this.txt_namfamily.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_namfamily.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_namfamily.Location = new System.Drawing.Point(266, 42);
+            this.txt_namfamily.Multiline = true;
             this.txt_namfamily.Name = "txt_namfamily";
-            this.txt_namfamily.Size = new System.Drawing.Size(161, 29);
+            this.txt_namfamily.Size = new System.Drawing.Size(161, 30);
             this.txt_namfamily.TabIndex = 10;
             // 
             // txt_user_name
             // 
-            this.txt_user_name.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_user_name.Location = new System.Drawing.Point(507, 97);
+            this.txt_user_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_user_name.Location = new System.Drawing.Point(518, 94);
+            this.txt_user_name.Multiline = true;
             this.txt_user_name.Name = "txt_user_name";
             this.txt_user_name.Size = new System.Drawing.Size(161, 29);
             this.txt_user_name.TabIndex = 9;
             // 
             // txt_name
             // 
-            this.txt_name.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_name.Location = new System.Drawing.Point(507, 49);
+            this.txt_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_name.Location = new System.Drawing.Point(518, 42);
+            this.txt_name.Multiline = true;
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(161, 29);
+            this.txt_name.Size = new System.Drawing.Size(161, 27);
             this.txt_name.TabIndex = 4;
             // 
             // cmb_sath_karbari
@@ -338,7 +343,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.data_grid_user);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.groupBox3.Location = new System.Drawing.Point(12, 228);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(757, 260);

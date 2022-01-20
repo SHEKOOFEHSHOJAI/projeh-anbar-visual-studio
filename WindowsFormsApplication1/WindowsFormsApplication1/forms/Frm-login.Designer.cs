@@ -53,7 +53,7 @@
             // 
             // txt_usename
             // 
-            this.txt_usename.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_usename.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_usename.Location = new System.Drawing.Point(125, 19);
             this.txt_usename.Multiline = true;
             this.txt_usename.Name = "txt_usename";
@@ -62,7 +62,7 @@
             // 
             // txt_ramz_obor
             // 
-            this.txt_ramz_obor.Font = new System.Drawing.Font("Baskerville Old Face", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ramz_obor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ramz_obor.Location = new System.Drawing.Point(125, 87);
             this.txt_ramz_obor.Multiline = true;
             this.txt_ramz_obor.Name = "txt_ramz_obor";

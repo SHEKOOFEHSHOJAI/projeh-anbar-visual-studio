@@ -75,6 +75,7 @@
             // 
             // txt_discription
             // 
+            this.txt_discription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_discription.Location = new System.Drawing.Point(31, 85);
             this.txt_discription.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_discription.Name = "txt_discription";
@@ -96,26 +97,29 @@
             // como_model_kala
             // 
             this.como_model_kala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.como_model_kala.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.como_model_kala.FormattingEnabled = true;
             this.como_model_kala.Location = new System.Drawing.Point(31, 41);
             this.como_model_kala.Name = "como_model_kala";
-            this.como_model_kala.Size = new System.Drawing.Size(153, 21);
+            this.como_model_kala.Size = new System.Drawing.Size(153, 24);
             this.como_model_kala.TabIndex = 8;
             this.como_model_kala.SelectedIndexChanged += new System.EventHandler(this.como_model_kala_SelectedIndexChanged);
             // 
             // como_name_kala
             // 
             this.como_name_kala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.como_name_kala.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.como_name_kala.FormattingEnabled = true;
             this.como_name_kala.Location = new System.Drawing.Point(289, 35);
             this.como_name_kala.Name = "como_name_kala";
-            this.como_name_kala.Size = new System.Drawing.Size(153, 21);
+            this.como_name_kala.Size = new System.Drawing.Size(153, 24);
             this.como_name_kala.TabIndex = 7;
             this.como_name_kala.SelectedIndexChanged += new System.EventHandler(this.como_name_kala_SelectedIndexChanged);
             // 
             // como_goroh_kala
             // 
             this.como_goroh_kala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.como_goroh_kala.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.como_goroh_kala.FormattingEnabled = true;
             this.como_goroh_kala.Items.AddRange(new object[] {
             "لوازم خانگی",
@@ -124,12 +128,13 @@
             " لوازم کشاورزی"});
             this.como_goroh_kala.Location = new System.Drawing.Point(526, 37);
             this.como_goroh_kala.Name = "como_goroh_kala";
-            this.como_goroh_kala.Size = new System.Drawing.Size(153, 21);
+            this.como_goroh_kala.Size = new System.Drawing.Size(153, 24);
             this.como_goroh_kala.TabIndex = 2;
             this.como_goroh_kala.SelectedIndexChanged += new System.EventHandler(this.como_goroh_kala_SelectedIndexChanged);
             // 
             // txt_tedad
             // 
+            this.txt_tedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tedad.Location = new System.Drawing.Point(526, 90);
             this.txt_tedad.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_tedad.Name = "txt_tedad";
@@ -278,7 +283,7 @@
             // btn_add
             // 
             this.btn_add.BoldedForeColor = System.Drawing.Color.Blue;
-            this.btn_add.Font = new System.Drawing.Font("B Nazanin", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_add.HolidayForeColor = System.Drawing.Color.Red;
             this.btn_add.Image = ((System.Drawing.Image)(resources.GetObject("btn_add.Image")));
             this.btn_add.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -306,6 +311,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.data_grid_mayob);
+            this.groupBox3.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.groupBox3.Location = new System.Drawing.Point(-8, 260);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(757, 261);

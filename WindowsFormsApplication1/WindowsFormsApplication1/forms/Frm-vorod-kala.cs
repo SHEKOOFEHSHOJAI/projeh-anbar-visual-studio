@@ -128,5 +128,10 @@ namespace WindowsFormsApplication1.forms
         {
 
         }
+
+        private void data_grid_vorod_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -201,7 +201,7 @@
             // 
             // txt_adress
             // 
-            this.txt_adress.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_adress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_adress.Location = new System.Drawing.Point(24, 89);
             this.txt_adress.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_adress.Name = "txt_adress";
@@ -211,7 +211,7 @@
             // 
             // txt_job
             // 
-            this.txt_job.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_job.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_job.Location = new System.Drawing.Point(250, 85);
             this.txt_job.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_job.Name = "txt_job";
@@ -221,7 +221,7 @@
             // 
             // txt_tell
             // 
-            this.txt_tell.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tell.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tell.Location = new System.Drawing.Point(512, 85);
             this.txt_tell.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_tell.Name = "txt_tell";
@@ -231,7 +231,7 @@
             // 
             // txt_code_meli
             // 
-            this.txt_code_meli.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_code_meli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_code_meli.Location = new System.Drawing.Point(24, 33);
             this.txt_code_meli.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_code_meli.Name = "txt_code_meli";
@@ -252,7 +252,7 @@
             // 
             // txt_namfamily
             // 
-            this.txt_namfamily.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_namfamily.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_namfamily.Location = new System.Drawing.Point(250, 36);
             this.txt_namfamily.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_namfamily.Name = "txt_namfamily";
@@ -296,7 +296,7 @@
             // 
             // txt_name
             // 
-            this.txt_name.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_name.Location = new System.Drawing.Point(512, 36);
             this.txt_name.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_name.Name = "txt_name";
@@ -329,7 +329,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.data_grid_personel);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.groupBox3.Location = new System.Drawing.Point(-8, 246);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(757, 279);

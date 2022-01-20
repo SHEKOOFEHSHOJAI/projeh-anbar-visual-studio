@@ -88,6 +88,7 @@
             // 
             // txt_tell_tahvilgirandeh
             // 
+            this.txt_tell_tahvilgirandeh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tell_tahvilgirandeh.Location = new System.Drawing.Point(259, 133);
             this.txt_tell_tahvilgirandeh.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_tell_tahvilgirandeh.Name = "txt_tell_tahvilgirandeh";
@@ -108,6 +109,7 @@
             // 
             // txt_tahvil_dahandeh
             // 
+            this.txt_tahvil_dahandeh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tahvil_dahandeh.Location = new System.Drawing.Point(492, 136);
             this.txt_tahvil_dahandeh.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_tahvil_dahandeh.Name = "txt_tahvil_dahandeh";
@@ -129,15 +131,17 @@
             // como_tahvil_girandeh
             // 
             this.como_tahvil_girandeh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.como_tahvil_girandeh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.como_tahvil_girandeh.FormattingEnabled = true;
             this.como_tahvil_girandeh.Location = new System.Drawing.Point(9, 88);
             this.como_tahvil_girandeh.Name = "como_tahvil_girandeh";
-            this.como_tahvil_girandeh.Size = new System.Drawing.Size(157, 21);
+            this.como_tahvil_girandeh.Size = new System.Drawing.Size(157, 24);
             this.como_tahvil_girandeh.TabIndex = 6;
             // 
             // como_goroh_kala
             // 
             this.como_goroh_kala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.como_goroh_kala.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.como_goroh_kala.FormattingEnabled = true;
             this.como_goroh_kala.Items.AddRange(new object[] {
             "لوازم خانگی",
@@ -146,11 +150,12 @@
             "لوازم ماشین"});
             this.como_goroh_kala.Location = new System.Drawing.Point(259, 34);
             this.como_goroh_kala.Name = "como_goroh_kala";
-            this.como_goroh_kala.Size = new System.Drawing.Size(159, 21);
+            this.como_goroh_kala.Size = new System.Drawing.Size(159, 24);
             this.como_goroh_kala.TabIndex = 2;
             // 
             // txt_tedad
             // 
+            this.txt_tedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tedad.Location = new System.Drawing.Point(259, 83);
             this.txt_tedad.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_tedad.Name = "txt_tedad";
@@ -160,6 +165,7 @@
             // 
             // txt_model_kala
             // 
+            this.txt_model_kala.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_model_kala.Location = new System.Drawing.Point(492, 83);
             this.txt_model_kala.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_model_kala.Name = "txt_model_kala";
@@ -169,6 +175,7 @@
             // 
             // txt_name_kala
             // 
+            this.txt_name_kala.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_name_kala.Location = new System.Drawing.Point(9, 33);
             this.txt_name_kala.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_name_kala.Name = "txt_name_kala";
@@ -222,6 +229,7 @@
             // 
             // txt_tarikh
             // 
+            this.txt_tarikh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tarikh.Location = new System.Drawing.Point(492, 37);
             this.txt_tarikh.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_tarikh.Name = "txt_tarikh";
@@ -376,6 +384,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.data_grid_vorod);
+            this.groupBox3.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.groupBox3.Location = new System.Drawing.Point(-8, 251);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(757, 261);
@@ -392,6 +401,7 @@
             this.data_grid_vorod.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.data_grid_vorod.Size = new System.Drawing.Size(717, 250);
             this.data_grid_vorod.TabIndex = 0;
+            this.data_grid_vorod.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_grid_vorod_CellContentClick);
             this.data_grid_vorod.Click += new System.EventHandler(this.data_grid_vorod_Click);
             // 
             // Frm_vorod_kala

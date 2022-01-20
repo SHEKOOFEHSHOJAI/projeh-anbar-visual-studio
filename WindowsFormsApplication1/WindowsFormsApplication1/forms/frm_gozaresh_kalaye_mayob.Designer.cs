@@ -37,15 +37,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_search = new System.Windows.Forms.RichTextBox();
             this.cmb_search = new System.Windows.Forms.ComboBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_gozaresh_mayob)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.buttonX1);
-            this.groupBox1.Controls.Add(this.data_grid_gozaresh_mayob);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Location = new System.Drawing.Point(0, -3);
             this.groupBox1.Name = "groupBox1";
@@ -84,9 +86,9 @@
             this.data_grid_gozaresh_mayob.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_grid_gozaresh_mayob.Columns_EnglishDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_gozaresh_mayob.Columns_EnglishDate")));
             this.data_grid_gozaresh_mayob.Columns_PersianDate = ((System.Collections.Generic.List<string>)(resources.GetObject("data_grid_gozaresh_mayob.Columns_PersianDate")));
-            this.data_grid_gozaresh_mayob.Location = new System.Drawing.Point(20, 180);
+            this.data_grid_gozaresh_mayob.Location = new System.Drawing.Point(6, 9);
             this.data_grid_gozaresh_mayob.Name = "data_grid_gozaresh_mayob";
-            this.data_grid_gozaresh_mayob.Size = new System.Drawing.Size(717, 250);
+            this.data_grid_gozaresh_mayob.Size = new System.Drawing.Size(726, 266);
             this.data_grid_gozaresh_mayob.TabIndex = 1;
             this.data_grid_gozaresh_mayob.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_grid_gozaresh_mayob_CellContentClick);
             this.data_grid_gozaresh_mayob.Click += new System.EventHandler(this.data_grid_gozaresh_mayob_Click);
@@ -96,7 +98,7 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txt_search);
             this.groupBox2.Controls.Add(this.cmb_search);
-            this.groupBox2.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(6, 19);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(746, 115);
@@ -115,7 +117,7 @@
             // 
             // txt_search
             // 
-            this.txt_search.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_search.Location = new System.Drawing.Point(133, 50);
             this.txt_search.Name = "txt_search";
             this.txt_search.Size = new System.Drawing.Size(121, 32);
@@ -126,7 +128,7 @@
             // cmb_search
             // 
             this.cmb_search.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_search.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.cmb_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_search.FormattingEnabled = true;
             this.cmb_search.Items.AddRange(new object[] {
             "گروه کالا",
@@ -134,8 +136,18 @@
             "مدل کالا"});
             this.cmb_search.Location = new System.Drawing.Point(372, 50);
             this.cmb_search.Name = "cmb_search";
-            this.cmb_search.Size = new System.Drawing.Size(121, 32);
+            this.cmb_search.Size = new System.Drawing.Size(121, 24);
             this.cmb_search.TabIndex = 2;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.data_grid_gozaresh_mayob);
+            this.groupBox3.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.groupBox3.Location = new System.Drawing.Point(11, 154);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(741, 281);
+            this.groupBox3.TabIndex = 3;
+            this.groupBox3.TabStop = false;
             // 
             // frm_gozaresh_kalaye_mayob
             // 
@@ -156,6 +168,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_gozaresh_mayob)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -169,5 +182,6 @@
         private System.Windows.Forms.RichTextBox txt_search;
         private BehComponents.ButtonX buttonX1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
